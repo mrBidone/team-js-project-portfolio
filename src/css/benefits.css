@@ -1,0 +1,53 @@
+/* benefists */
+.section-title{
+font-family: "Inter Tight",
+sans-serif;
+font-weight: 600;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: rgba(250, 250, 250, 0.4); 
+margin-bottom: 16px;  
+}
+
+.benefits-title{
+font-family: "Inter Tight",
+sans-serif;
+font-weight: 600;
+font-size: 20px;
+line-height: 1.5;
+letter-spacing: -0.02em;
+color: #fafafa; 
+margin-bottom: 8px;  
+}
+.benefits-text{
+font-family: "Inter Tight",
+sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: -0.02em;
+color: rgba(250, 250, 250, 0.6); 
+}
+.benefits-text:last-child{
+
+}
+.icon-benefits{
+background-color: var(--accent-color);
+border-radius: 10px;
+}
+.benefits-link{
+border: 1px solid rgba(250, 250, 250, 0.2);
+border-radius: 60px;
+padding: 18px 36px;
+width: 187px;
+height: 55px;
+margin-top: 32px;
+}
+.benefits-item{
+border-radius: 20px;
+padding: 24px;
+width: 344px;
+height: 270px;
+}
