@@ -5,7 +5,7 @@ import Swiper from 'swiper';
 import 'swiper/css';
 
 const refs = {
-  reviewsList: document.querySelector('.reviews - list'),
+  reviewsList: document.querySelector('.reviews-list'),
   previousBtn: document.querySelector('.previous-btn'),
   nextBtn: document.querySelector('.next-btn'),
 };
