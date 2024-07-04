@@ -1,0 +1,47 @@
+.review-title {
+  color: var(--transparent-text-color);
+  line-height: 1.5;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.reviews-item {
+  width: 344px;
+  padding: 32px;
+}
+
+.err-container,
+.reviews-item {
+  border-radius: 20px;
+  border: 1px solid var(--transparent-elements-color);
+}
+
+@media screen and (min-width: 1440px) {
+  .reviews-item {
+    max-width: 332px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reviews-icon {
+    width: 52px;
+  }
+}
+
+.review-photo {
+  margin-bottom: 32px;
+}
+.review-author {
+  margin-bottom: 8px;
+}
+
+.reviews-icon {
+  width: 68px;
+}
