@@ -1,7 +1,5 @@
 import axios from 'axios';
-// import Swiper JS
 import Swiper from 'swiper';
-// import Swiper styles
 import 'swiper/css';
 
 const refs = {
@@ -10,44 +8,34 @@ const refs = {
   nextBtn: document.querySelector('.next-btn'),
 };
 
-// async function getReviews() {
-//   const BASE_URL = 'https://portfolio-js.b.goit.study/api/reviews';
+const reviewsList = document.querySelector('.reviews-list');
 
-//   return await axios.get(`${BASE_URL}`);
-// }
-
-// try {
-//     const {{ avatar_url, author, review } = await getReviews();
-//     }
-// }
-
-async function getReviews() {
+window.addEventListener('DOMContentLoaded', async () => {
   try {
     const response = await axios.get(
       'https://portfolio-js.b.goit.study/api/reviews'
     );
-    console.log(response);
+    const data = response.data;
+
+    data.forEach(review => {
+      const reviewItem = document.createElement('div');
+      reviewItem.classList.add('review-item');
+      reviewItem.innerHTML = `<li class="reviews-item">
+         <img
+           src="${review.avatar_url}"
+           alt="author's photo"
+           class="review-photo"
+           width="48px"
+           height="48px"
+         />
+         <p class="review-author">${review.author}</p>
+         <p class="review-text">
+           ${review.review}
+         </p>
+       </li>`;
+      refs.reviewsList.appendChild(reviewItem);
+    });
   } catch (error) {
-    console.error(error);
+    console.error('Error fetching reviews:', error);
   }
-}
-
-refs.previousBtn.addEventListener('click', e => e.preventDefault());
-refs.nextBtn.addEventListener('click', e => e.preventDefault());
-
-// `<li class="reviews-item">
-//         <img
-//           src=""
-//           alt="author's photo"
-//           class="review-photo"
-//           width="48px"
-//           height="48px"
-//         />
-//         <p class="review-author">Poly</p>
-//         <p class="review-text">
-//           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-//           molestiae atque maxime accusamus inventore, quasi placeat dolorum,
-//           voluptates, natus maiores dolorem tempore consequatur accusantium
-//           harum. Odit, dolorum quod. Ab, consequatur!
-//         </p>
-//       </li>`;
+});
