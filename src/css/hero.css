@@ -1,1 +1,122 @@
+.hero-wrapper {
+  padding-top: 281px;
+  padding-bottom: 32px;
+  background-image: url('../img/hero/hero-mobile.png');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
 
+@media only screen and (min-resolution: 192dpi) {
+  .hero-wrapper {
+    background-image: url('../img/hero/hero-mobile-@x2.png');
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-wrapper {
+    background-image: url('../img/hero/hero-tablet.png');
+    padding-top: 300px;
+  }
+
+  @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero-wrapper {
+      background-image: url('../img/hero/hero-tablet-@x2.png');
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero-wrapper {
+    background-image: url('../img/hero/hero.png');
+  }
+
+  @media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+    .hero-wrapper {
+      background-image: url('../img/hero/hero-@x2.png');
+    }
+  }
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 2px black;
+  paint-order: stroke fill;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 90px;
+    -webkit-text-stroke: initial;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero-title {
+    max-width: 1084px;
+    margin: 0 auto;
+  }
+}
+
+.contacts-links-container {
+  margin-top: 187px;
+  margin-right: auto;
+  display: flex;
+  justify-content: end;
+  gap: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contacts-links-container {
+    font-size: 90px;
+    gap: 8px;
+    -webkit-text-stroke: initial;
+  }
+}
+
+.contact-link-item {
+  width: 37px;
+  height: 37px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-link-item {
+    width: 55px;
+    height: 55px;
+    font-size: 16px;
+  }
+}
+
+.contact-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  border-color: #fafafa;
+}
+
+.contact-email-link {
+  align-items: center;
+  width: 178px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-email-link {
+    width: 223px;
+  }
+}
