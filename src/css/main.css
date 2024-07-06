@@ -9,6 +9,7 @@
 
   --transparent-text-color: rgba(250, 250, 250, 0.4);
   --transparent-elements-color: rgba(250, 250, 250, 0.2);
+  --transparent-description-color: rgba(250, 250, 250, 0.6);
 
   --default-duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
