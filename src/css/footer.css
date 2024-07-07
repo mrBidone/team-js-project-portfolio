@@ -1,7 +1,6 @@
-/*=====Mobile=====*/
-
 .footer {
-  background: #1c1d20 url('') right center no-repeat;
+  background: #1c1d20 url('/img/footer/footer-mobil_1x.png') right center
+    no-repeat;
 }
 
 .footer-top {
@@ -24,11 +23,11 @@
   line-height: 1;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #fafafa;
+  color: var(--main-text-color);
 }
 
 .title-accent {
-  color: #ed3b44;
+  color: var(--accent-color);
 }
 
 .footer-form {
@@ -42,11 +41,11 @@
   height: 44px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  border-bottom: 1px solid var(--transparent-elements-color);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  color: #fafafa;
+  color: var(--main-text-color);
   margin-bottom: 16px;
   white-space: nowrap;
   overflow: hidden;
@@ -76,12 +75,12 @@
 .footer-form-btn {
   width: 100px;
   height: 100px;
-  background-color: #ed3b44;
+  background-color: var(--accent-color);
   border-radius: 50%;
   border: none;
   font-weight: 500;
   letter-spacing: -0.02em;
-  color: #fafafa;
+  color: var(--main-text-color);
   cursor: pointer;
   transition: 0.25s;
 }
@@ -92,32 +91,55 @@
   letter-spacing: 0.1em;
 }
 
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 37px;
+}
+
 .contacts {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 4px;
+  height: 100%;
 }
 
 .contacts-item {
-  border: 1px solid rgba(250, 250, 250, 0.2);
+  border: 1px solid var(--transparent-elements-color);
   border-radius: 60px;
-  padding: 10px 12px;
   line-height: 1;
-  transition: 0.25s;
+  height: 100%;
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-mail {
+  width: 178px;
+}
+
+.contacts-phone {
+  width: 118px;
 }
 
 .contacts-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   font-weight: 500;
   font-size: 0.875rem;
   font-style: normal;
   letter-spacing: -0.02em;
-  color: #fafafa;
-  transition: 0.25s;
+  color: var(--main-text-color);
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-item:hover {
-  border: 1px solid #fafafa;
+  border-color: var(--main-text-color);
 }
 
 .contacts-item:hover .contacts-link {
@@ -194,7 +216,7 @@
 
 .close-btn:hover .icon-close,
 .close-btn:focus .icon-close {
-  stroke: #ed3b44;
+  stroke: var(--accent-color);
 }
 
 .modal-title {
@@ -204,7 +226,7 @@
   letter-spacing: -0.02em;
 }
 
-.modal-text {
+.modal-message {
   text-align: center;
   font-weight: 500;
   letter-spacing: -0.02em;
@@ -215,13 +237,15 @@
 
 @media screen and (min-width: 768px) {
   .footer {
-    background: #1c1d20 url('') right center no-repeat;
+    padding: 80px 0 169px 0;
+    background: #1c1d20 url('/img/footer/footer-tablet_1x.png') right center
+      no-repeat;
   }
 
   .footer-top {
     max-width: 542px;
     gap: 10px;
-    margin-bottom: 64px;
+    margin-bottom: 18px;
   }
 
   .footer-image {
@@ -256,17 +280,24 @@
     height: 150px;
   }
 
+  .footer-bottom {
+    height: 55px;
+  }
+
   .contacts {
     gap: 8px;
   }
 
-  .contacts-item {
-    padding: 18px 32px;
-    line-height: 1;
+  .contacts-mail {
+    width: 239px;
+  }
+
+  .contacts-phone {
+    width: 171px;
   }
 
   .contacts-link {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .modal {
@@ -289,7 +320,8 @@
 
 @media screen and (min-width: 1440px) {
   .footer {
-    background: #1c1d20 url('') right center no-repeat;
+    background: #1c1d20 url('/img/footer/footer-desktop_1x.png') right center
+      no-repeat;
   }
 
   .footer-form-input {
@@ -305,18 +337,21 @@
 
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .footer {
-    background: #1c1d20 url('') right center no-repeat;
+    background: #1c1d20 url('/img/footer/footer-mobil_1x.png') right center
+      no-repeat;
   }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .footer {
-    background: #1c1d20 url('') right center no-repeat;
+    background: #1c1d20 url('/img/footer/footer-tablet_2x.png') right center
+      no-repeat;
   }
 }
 
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .footer {
-    background: #1c1d20 url('') right center no-repeat;
+    background: #1c1d20 url('/img/footer/footer-desktop_2x.png') right center
+      no-repeat;
   }
 }
