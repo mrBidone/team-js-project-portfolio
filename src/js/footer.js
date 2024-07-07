@@ -18,7 +18,7 @@ contactForm.addEventListener('submit', async function (e) {
     };
 
     try {
-        const response = await fetch('api', {
+        const response = await fetch('https://portfolio-js.b.goit.study/api-docs', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
