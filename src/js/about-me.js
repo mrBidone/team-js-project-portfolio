@@ -2,35 +2,42 @@
 
 ////// start swiper
 
-import Swiper from 'swiper/bundle';
-import 'swiper/swiper-bundle.css';
-import '../css/about-me.css';
+import Swiper from 'swiper';
+import 'swiper/css/bundle';
 
-const skillsSwiper = new Swiper('.skills-swiper', {
-  direction: 'horizontal',
-  loop: true,
+import { Keyboard, Mousewheel, Navigation } from 'swiper/modules';
+
+const swiperAboutMe = new Swiper('#swiperAbout', {
+  modules: [Navigation, Keyboard, Mousewheel],
   navigation: {
-    nextEl: '.swiper-button-next-skills',
+    nextEl: '.about-me-btn-swipe',
   },
-  mousewheel: true,
+  mousewheel: {
+    invert: true,
+  },
   keyboard: {
     enabled: true,
     onlyInViewport: true,
-    pageUpDown: true,
   },
+  mousewheel: true,
+  touch: true,
+  centeredSlides: false,
+  loop: true,
+  speed: 500,
+  spaceBetween: 0,
+  slideToClickedSlide: true,
+  allowTouchMove: true,
   slideActiveClass: 'current-skill',
+  slidesPerView: 2,
+  width: 260,
   breakpoints: {
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 0,
-    },
     768: {
       slidesPerView: 3,
-      spaceBetween: 0,
+      width: 600,
     },
     1440: {
       slidesPerView: 6,
-      spaceBetween: 0,
+      width: 1264,
     },
   },
 });
