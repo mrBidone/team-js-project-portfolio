@@ -1,207 +1,36 @@
-
-
-  .project-container, .right-half{
-  flex: 1;
-
-  }
-
-  .project-container{
-    background-color : #fafafa;
-   /*  border-radius: 24px 0  0 24px ; */
-  border-radius: 24px 24px 0 0;
-  }
-
-  .right-half {
-  background-color:#242527;
-  /* padding: 120px 37px ; */
-  padding: 100px 16px;
-
-  border-radius:  0 0 24px 24px;
-  /* border-radius:0  24px 24px 0; */
-
-  }
-
-  .project-img{
-  /* width: 614px;
-  height: 385px; */
-  width: 311px;
-  height: 195px;
+.project-item {
+  max-width: 343px;
+  border-radius: 24px;
+}
+.first-side {
+  background-color: var(--main-text-color);
+  color: var(--dark-text-color);
+  padding: 32px;
+}
+.tech-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tech-skills-item {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  }
+  gap: 10px;
+  border: 1px solid var(--transparent-elements-color);
+  border-radius: 60px;
+}
 
-
-
-  .project-title{
-
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
+.tech-skills-desc {
   letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: rgba(250, 250, 250, 0.4);
-  margin-bottom: 32px;
-  }
+}
 
-  .project-list{
-    display: flex;
-    flex-wrap: wrap;
-   /*  gap: 24px; */
-  gap: 6px;
-  /*   margin-left: 64px;
-   margin-top: 64px; */
-
-  padding: 32px 32px 0 32px ;
-
-
-  }
-
-  .project-item{
-    border: 1px solid rgba(28, 29, 32, 0.2);
-  border-radius: 60px;
-  padding: 13px 18px;
-  font-weight: 500;
-  font-size: 16px;
-  /* width: 80px; */
-  /* height: 45px; */
-  height: 100%;
-  color: #1c1d20;
-  }
-
-  .project-text{
-
-  /* width: 494px; */
-
-    font-weight: 500;
-   /*  font-size: 44px; */
-  font-size: 24px;
-  /* line-height: 100%; */
-  line-height: 1.17;
-  letter-spacing: -0.03em;
-    color: #1c1d20;
-    margin-bottom: 32px;
-   /*  margin-top: 223px; */
-  margin-top: 96px;
-  /*   margin-left: 64px; */
-    margin-left: 32px;
-   margin-right: 32px;
-
-
-  }
-
-
-  .project-button{
-    border-radius: 60px;
-    border-color: var(--accent-color);
-
-   justify-content: center;
-    width: 177px;
-    height: 55px;
-    background-color: var(--accent-color);
-  color: #fff;
-  font-weight: 500;
-  font-size: 16px;
-  /* margin-bottom: 64px;
-  margin-left: 64px; */
-  margin-bottom: 32px;
-  margin-left: 32px;
-  }
-  .icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-  }
-
-  .icon-arrow{
-    justify-content: center;
-  width: 32px;
-  height: 32px;
-
-  }
-
-  .swiper-proj-prev, .swiper-proj-next{
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    background-color:#1c1d20;
-  border-radius: 60px;
-  padding: 18px;
-  width: 68px;
-  height: 68px;
-  justify-content: center;
-
-  }
-  .swiper-proj-next{
-    border: 1px solid rgba(250, 250, 250, 0.5);
-  }
-
-  .swiper-btn{
-    display: flex;
-    justify-content: center;
-    margin-top: 64px;
-    gap: 24px;
-  }
-
-  @media screen and (min-width: 768px){
-
-     .project-swiper{
-      max-width: 704px;
-    }
-    .right-half{
-      width: 704px;
-  padding: 120px 45px;
-    }
-    .project-container{
-      width: 704px;
-    }
-    .project-img{
-      background-image: url(../img/project/project1des.png);
-      width: 614px;
-      height: 385px;
-    }
-    .project-list{
-    padding: 64px 64px 0 64px;
-    }
-    .project-text{
-      width: 494px;
-      font-size: 44px;
-      line-height: 100%;
-      margin-top: 164px;
-      margin-left: 64px;
-    }
-  .project-button{
-    margin-bottom: 64px;
-  margin-left: 64px;
-  }
-  }
-
-  @media screen and (min-width: 1440px){
-    .project-swiper{
-   display: flex;
-  /*  width: 100%; */
-
-    }
-    .project-container{
-    border-radius:  24px 0  0 24px;
-    }
-    .right-half {
-  border-radius: 0 24px 24px 0;
-  padding: 120px 37px;
-
-    }
-    .project-img{
-
-      max-width: 614px;
-      height: 385px;
-    }
-
-    .project-text{
-      margin-top: 223px;
-    }
-
-  }
-
-  .swiper-proj-prev.disabled, .swiper-proj-next.disabled {
-    opacity: 0.5;
-    pointer-events: none;
-  }
+.card-title {
+}
+.project-link {
+}
+.second-side {
+}
+.project-img {
+}
+.project-img2 {
+}
