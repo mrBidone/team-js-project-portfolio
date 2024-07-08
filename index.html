@@ -9,7 +9,7 @@
     <script type="module" crossorigin src="/team-js-project-portfolio/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/team-js-project-portfolio/assets/vendor-eb082eaa.js">
     <link rel="stylesheet" href="/team-js-project-portfolio/assets/vendor-9d4394ad.css">
-    <link rel="stylesheet" href="/team-js-project-portfolio/assets/index-b1b3da82.css">
+    <link rel="stylesheet" href="/team-js-project-portfolio/assets/index-5ab2f63a.css">
   </head>
   <body>
     <!-- Header -->
@@ -714,13 +714,17 @@
     <div class="reviews-container swiper mySwiper">
       <h2 class="review-title">REVIEWS</h2>
       <ul class="reviews-list swiper-wrapper"></ul>
-      <div class="swiper-container">
-        <div class="previous-btn custom-prev" id="previous-btn">
+      <div id="error-reviews-block">
+        <p class="error-reviews-msg">NOT FOUND</p>
+      </div>
+      <div class="swiper-btn-container">
+        <div class="swiper-btn-next custom-prev">
+          <!-- custom-btn-disabled -->
           <svg class="reviews-icon">
             <use href="../img/svg/sprite.svg#icon-arrow-left"></use>
           </svg>
         </div>
-        <div class="next-btn custom-next" id="next-btn">
+        <div class="swiper-btn-next custom-next">
           <svg class="reviews-icon">
             <use href="../img/svg/sprite.svg#icon-arrow-right"></use>
           </svg>
