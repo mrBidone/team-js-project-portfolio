@@ -1,36 +1,146 @@
+.section-title {
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--transparent-text-color);
+  margin-bottom: 32px;
+}
+
 .project-item {
-  max-width: 343px;
-  border-radius: 24px;
+  width: 343px;
 }
 .first-side {
   background-color: var(--main-text-color);
   color: var(--dark-text-color);
   padding: 32px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
 }
+
 .tech-skills-list {
   display: flex;
   flex-wrap: wrap;
-}
-.tech-skills-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 10px;
-  border: 1px solid var(--transparent-elements-color);
-  border-radius: 60px;
+  margin-bottom: 96px;
 }
 
 .tech-skills-desc {
   letter-spacing: -0.02em;
+  padding: 13px 18px;
+  border: 1px solid var(--border-transparent-color);
+  border-radius: 60px;
 }
 
 .card-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  max-width: 279px;
+  margin-bottom: 32px;
 }
 .project-link {
+  display: inline-block;
+  border-radius: 60px;
+  padding: 13px 32px;
+  min-width: 141px;
+  height: 45px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  background-color: var(--accent-color);
+  color: var(--main-text-color);
 }
+
+.project-link:hover,
+.project-link:focus {
+  background-color: #c93139;
+}
+
 .second-side {
+  background-color: var(--cards-bg-color);
+  padding: 0 16px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
 }
 .project-img {
+  width: 311px;
+  padding: 100px 0;
 }
-.project-img2 {
+
+@media only screen and (min-width: 768px) {
+  .project-item {
+    width: 704px;
+  }
+
+  .first-side {
+    padding: 64px;
+  }
+
+  .tech-skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 164px;
+  }
+
+  .tech-skills-desc {
+    letter-spacing: -0.02em;
+    padding: 18px;
+  }
+
+  .card-title {
+    font-size: 44px;
+    line-height: 1;
+    max-width: 494px;
+  }
+  .project-link {
+    padding: 18px 50px;
+    min-width: 177px;
+    height: 55px;
+  }
+
+  .project-link:hover,
+  .project-link:focus {
+    background-color: #c93139;
+  }
+
+  .second-side {
+    background-color: var(--cards-bg-color);
+    padding: 0 45px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+  .project-img {
+    width: 614px;
+    padding: 120px 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .project-item {
+    display: flex;
+    width: 1376px;
+  }
+
+  .first-side {
+    padding-right: 130px;
+    border-bottom-left-radius: 24px;
+    border-top-right-radius: 0px;
+  }
+  .tech-skills-list {
+    margin-bottom: 223px;
+  }
+  .project-link {
+    padding: 18px 50px;
+    min-width: 177px;
+    height: 55px;
+  }
+
+  .second-side {
+    background-color: var(--cards-bg-color);
+    padding: 0 37px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 24px;
+  }
 }
