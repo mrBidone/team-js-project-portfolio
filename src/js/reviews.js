@@ -1,24 +1,21 @@
 import axios from 'axios';
-
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
-
 import { Keyboard, Mousewheel, Navigation } from 'swiper/modules';
-// import Swiper and modules styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const refs = {
   reviewsList: document.querySelector('.reviews-list'),
-  previousBtn: document.querySelector('.previous-btn'),
-  nextBtn: document.querySelector('.next-btn'),
+  previousBtn: document.querySelector('.custom-prev'),
+  nextBtn: document.querySelector('.custom-next'),
 };
 
 window.addEventListener('DOMContentLoaded', async () => {
   try {
     const response = await axios.get(
-      'https://portfolio-js.b.goit.study/api/reviews?_id=7'
+      'https://portfolio-js.b.goit.study/api/reviews'
     );
     const data = response.data;
     if (data.length === 0) {
@@ -28,63 +25,66 @@ window.addEventListener('DOMContentLoaded', async () => {
       refs.reviewsList.appendChild(notFoundText);
     } else {
       data.forEach(review => {
-        const reviewItem = document.createElement('div');
+        const reviewItem = document.createElement('li');
         reviewItem.classList.add('swiper-slide');
-        reviewItem.classList.add('review-item');
-
-        reviewItem.innerHTML = `<li class="reviews-item"> 
-           <img  
-             src="${review.avatar_url}"  
-             alt="author's photo"  
-              class="review-photo"  
-           width="48px"  
-           height="48px"  />  
-           <p class="review-author">${review.author}</p>  
-           <p class="review-text">${review.review}</p> 
-        </li>`;
+        reviewItem.classList.add('reviews-item');
+        reviewItem.innerHTML = `<div width="100%"> 
+            <img 
+              src="${review.avatar_url}" 
+              alt="author's photo" 
+              class="review-photo" 
+              width="48px" 
+              height="48px" 
+            /> 
+            <p class="review-author">${review.author}</p> 
+            <p class="review-text">${review.review}</p> 
+          </div>`;
         refs.reviewsList.appendChild(reviewItem);
       });
     }
+
+    const swiper = new Swiper('.mySwiper', {
+      modules: [Navigation, Keyboard, Mousewheel],
+      direction: 'horizontal',
+      breakpoints: {
+        1440: {
+          slidesPerView: 4,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        375: {
+          slidesPerView: 1,
+        },
+      },
+      navigation: {
+        nextEl: '.custom-next',
+        prevEl: '.custom-prev',
+      },
+      mousewheel: true,
+      keyboard: {
+        enabled: true,
+      },
+    });
+    const updateNavigationButtons = () => {
+      if (swiper.isBeginning) {
+        refs.previousBtn.classList.add('disabled');
+      } else {
+        refs.previousBtn.classList.remove('disabled');
+      }
+
+      if (swiper.isEnd) {
+        refs.nextBtn.classList.add('disabled');
+      } else {
+        refs.nextBtn.classList.remove('disabled');
+      }
+    };
+
+    swiper.on('slideChange', updateNavigationButtons);
+
+    updateNavigationButtons();
   } catch (error) {
-    console.error('Error fetching reviews:', error);
-    alert('Error fetching reviews. Please try again later.');
+    const errorBlock = document.getElementById('error-reviews-block');
+    errorBlock.style.display = 'block';
   }
 });
-
-const swiper = new Swiper('.mySwiper', {
-  direction: 'horizontal',
-
-  breakpoints: {
-    1440: {
-      slidesPerView: 4,
-      // width: '1376px',
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    375: {
-      slidesPerView: 1,
-    },
-  },
-
-  navigation: {
-    nextEl: '.custom-next',
-    prevEl: '.custom-prev',
-  },
-  mousewheel: true,
-  keyboard: {
-    enabled: true,
-  },
-
-  on: {
-    reachEnd: function () {
-      const nextReviewBtn = document.querySelector('.custom-next');
-      nextReviewBtn.disabled = true;
-      nextReviewBtn.style.opacity = '0.5';
-      nextReviewBtn.removeEventListener('click', clickHandler);
-    },
-  },
-});
-
-function clickHandler() {}
-document.querySelector('.custom-next').addEventListener('click', clickHandler);
