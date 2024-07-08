@@ -194,7 +194,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.skills-swiper {
+#swiperAbout {
   max-width: 260px;
 }
 
@@ -227,7 +227,7 @@
   border-radius: 100%;
 }
 
-.swiper-button-next-skills {
+.about-me-btn-swipe {
   display: block;
 }
 .swiper-arrow-right {
@@ -238,9 +238,8 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .skills-swiper {
+  #swiperAbout {
     max-width: 600px;
-    margin: 0 0;
   }
 
   .swiper-slide-text {
@@ -256,7 +255,7 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .skills-swiper {
+  #swiperAbout {
     max-width: 1264px;
   }
 
