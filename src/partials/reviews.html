@@ -1,27 +1,24 @@
 <section class="section">
-  <div class="container reviews-container swiper">
-    <h2 class="review-title">Reviews</h2>
-   
-      <ul class="reviews-list swiper-wrapper">
-      </ul>
-    </div>
-    <div class="swiper-container">
-      <div class="previous-btn swiper-button-prev" id="previous-btn">
-        <svg class="reviews-icon" >
-          <use href="../img/svg/sprite.svg#icon-arrow-left"></use>
-        </svg>
+  <div class="container">
+    <div class="reviews-container swiper mySwiper">
+      <h2 class="review-title">REVIEWS</h2>
+      <ul class="reviews-list swiper-wrapper"></ul>
+      <div id="error-reviews-block">
+        <p class="error-reviews-msg">NOT FOUND</p>
       </div>
-      <div class="next-btn swiper-button-next" id="next-btn">
-        <svg class="reviews-icon">
-          <use href="../img/svg/sprite.svg#icon-arrow-right"></use>
-        </svg>
-
+      <div class="swiper-btn-container">
+        <div class="swiper-btn-next custom-prev">
+          <!-- custom-btn-disabled -->
+          <svg class="reviews-icon">
+            <use href="../img/svg/sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </div>
+        <div class="swiper-btn-next custom-next">
+          <svg class="reviews-icon">
+            <use href="../img/svg/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </div>
       </div>
-
-      <!-- div for errors -->
-      <div class="err-container" style="display: none"></div>
     </div>
   </div>
 </section>
-
-

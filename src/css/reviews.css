@@ -1,10 +1,13 @@
-.review-title {
-  color: var(--transparent-text-color);
+.review-title,
+.review-author {
   line-height: 1.5;
   font-weight: 600;
-  margin-bottom: 32px;
+  font-size: 20px;
 }
-
+.review-title {
+  margin-bottom: 32px;
+  color: var(--transparent-text-color);
+}
 .reviews-list {
   display: flex;
   flex-direction: row;
@@ -12,26 +15,52 @@
   margin-bottom: 32px;
 }
 
-.reviews-item {
+/* .reviews-item {
   width: 344px;
+  min-height: 302px;
   padding: 32px;
+} */
+
+.review-author {
+  color: rgba(250, 250, 250);
 }
 
-.err-container,
-.reviews-item {
+.review-text {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: rgba(250, 250, 250, 0.6);
+  width: 284px;
+  height: 120px;
+  /* text-overflow: ellipsis; */
+  overflow: hidden;
+  /* white-space: nowrap; */
+}
+
+ul > .reviews-item {
   border-radius: 20px;
   border: 1px solid var(--transparent-elements-color);
+  padding: 32px;
+  height: 302px;
 }
 
 @media screen and (min-width: 1440px) {
   .reviews-item {
-    max-width: 332px;
-    height: 302px;
+    width: 332px !important;
+  }
+  .reviews-container {
+    min-width: 1376px;
   }
 }
-@media screen and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .reviews-container {
-    max-width: 704px;
+    width: 704px;
+  }
+  .review-text {
+    width: 296px;
+  }
+  .reviews-item {
+    width: 344px !important;
   }
 }
 
@@ -39,13 +68,12 @@
   .reviews-icon {
     width: 52px;
   }
-  .reviews-item {
-    max-width: 344px;
+  .review-text {
+    width: 295px;
   }
-}
-
-.reviews-container {
-  max-width: 1376px;
+  .reviews-item {
+    width: 344px !important;
+  }
 }
 
 .review-photo {
@@ -59,14 +87,38 @@
   width: 52px;
   height: 52px;
   padding: 13px;
+  stroke: rgba(250, 250, 250);
   justify-content: center;
   border: 1px solid rgba(250, 250, 250, 0.5);
   border-radius: 50%;
   cursor: pointer;
 }
 
-.swiper-container {
+.swiper-btn-container {
   display: flex;
   justify-content: center;
   gap: 12px;
+}
+
+.custom-next.disabled,
+.custom-prev.disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+#error-reviews-block {
+  display: none;
+  height: 302px;
+  padding: 135px;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid var(--transparent-elements-color);
+  margin-bottom: 32px;
+}
+.error-reviews-msg {
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--transparent-text-color);
 }

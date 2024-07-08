@@ -45,14 +45,11 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  -webkit-text-stroke: 2px black;
-  paint-order: stroke fill;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-title {
     font-size: 90px;
-    -webkit-text-stroke: initial;
   }
 }
 
@@ -75,7 +72,6 @@
   .contacts-links-container {
     font-size: 90px;
     gap: 8px;
-    -webkit-text-stroke: initial;
   }
 }
 
