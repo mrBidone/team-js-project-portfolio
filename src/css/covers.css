@@ -1,0 +1,123 @@
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+.covers-section {
+  position: relative;
+  overflow: hidden;
+  height: 508px;
+  min-width: 320px;
+  background-image: url(/img/covers/elements_vectors.png);
+  background-size: cover;
+}
+
+.marquee {
+  position: absolute;
+  top: -300px;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-resolution: 192dpi) {
+  .covers-section {
+    background-image: url(/img/covers/elements_vectors@2x.png);
+  }
+}
+.marquee-inner {
+  display: flex;
+  gap: 24px;
+  transform: rotate(16deg);
+}
+
+.marque-item {
+  display: block;
+  flex-shrink: 0;
+  width: 282px;
+  height: 162px;
+}
+
+.marque-img {
+  width: 282px;
+  object-fit: cover;
+  height: 100%;
+}
+
+.animation {
+  animation-name: marqueeLine;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  0% {
+    transform: translate(20px);
+  }
+  50% {
+    transform: translate(-100px);
+  }
+  100% {
+    transform: translate(20px);
+  }
+}
+.marquee-inner:nth-child(3) {
+  padding-left: 300px;
+}
+.marquee-inner:nth-child(5) {
+  padding-left: 200px;
+}
+@media only screen and (max-width: 767px) {
+  .marquee-inner:nth-child(6) {
+    padding-right: 300px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .covers-section {
+    height: 960px;
+  }
+  .marquee {
+    top: -500px;
+    gap: 44px;
+  }
+  .marquee-inner {
+    gap: 44px;
+  }
+
+  .marque-item {
+    width: 544px;
+    height: 314px;
+  }
+  .marque-img {
+    width: 544px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .marquee {
+    top: -450px;
+    gap: 64px;
+  }
+
+  .marquee-inner:nth-child(2) {
+    padding-left: 496px;
+  }
+  .marquee-inner:nth-child(6) {
+    padding-right: 700px;
+  }
+}
+
