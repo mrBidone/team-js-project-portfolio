@@ -200,11 +200,8 @@
     }
 
   }
-<<<<<<< Updated upstream
+
   .swiper-proj-prev.disabled, .swiper-proj-next.disabled {
-=======
-  .swiper-proj-prev.disabled, .swiper-btn-proj.disabled {
->>>>>>> Stashed changes
     opacity: 0.5;
     pointer-events: none;
   }
