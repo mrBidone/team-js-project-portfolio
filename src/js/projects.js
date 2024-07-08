@@ -24,17 +24,17 @@ import '../css/styles.css';
     speed: 500,
     spaceBetween: 0,
     slideToClickedSlide: true,
-    allowTouchMove: true,
+     allowTouchMove: true,
     slidesPerView: 1,
-    width: 260,
+    width: 343,
     breakpoints: {
       768: {
         slidesPerView: 1,
-        width: 600,
+        width: 704,
       },
       1440: {
         slidesPerView: 1,
-        width: 1200,
+        width: 1376,
       },
     },
     on: {
@@ -42,9 +42,10 @@ import '../css/styles.css';
         const nextBtn = document.querySelector('.swiper-proj-next');
         const prevBtn = document.querySelector('.swiper-proj-prev');
 
-        if (this.isEnd) {
+    if (this.isEnd) {
           nextBtn.disabled = true;
           nextBtn.classList.add('disabled');
+
         } else {
           nextBtn.disabled = false;
           nextBtn.classList.remove('disabled');
@@ -52,11 +53,12 @@ import '../css/styles.css';
         if (this.isBeginning) {
           prevBtn.disabled = true;
           prevBtn.classList.add('disabled');
+
         } else {
           prevBtn.disabled = false;
           prevBtn.classList.remove('disabled');
         }
-      },
+     }
     },
   });
 
