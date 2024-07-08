@@ -1,7 +1,7 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-// User options
+
 new Accordion('.faq-list', {
     elementClass: "faq-item",
     triggerClass: "faq-question",
