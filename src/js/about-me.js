@@ -1,10 +1,12 @@
+//// about me
+
 ////// start swiper
 
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
-import '../css/styles.css';
+import '../css/about-me.css';
 
-const skillsSwiper = new Swiper('.swiper', {
+const skillsSwiper = new Swiper('.skills-swiper', {
   direction: 'horizontal',
   loop: true,
   navigation: {

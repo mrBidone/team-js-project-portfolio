@@ -1,3 +1,5 @@
+/* about me */
+
 @media only screen and (min-width: 768px) {
   .section .about-me {
     padding-top: 32px;
@@ -192,7 +194,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.swiper {
+.skills-swiper {
   max-width: 260px;
 }
 
@@ -236,7 +238,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .swiper {
+  .skills-swiper {
     max-width: 600px;
     margin: 0 0;
   }
@@ -254,7 +256,7 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .swiper {
+  .skills-swiper {
     max-width: 1264px;
   }
 
