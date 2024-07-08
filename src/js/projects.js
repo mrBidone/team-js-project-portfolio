@@ -7,8 +7,8 @@ import '../css/styles.css';
   const swiperProject = new Swiper('#swiperProject', {
     modules: [Navigation, Keyboard, Mousewheel],
     navigation: {
-      nextEl: '.swiper-btn-next',
-      prevEl: '.swiper-btn-prev'
+      nextEl: '.swiper-proj-next',
+      prevEl: '.swiper-proj-prev'
     },
     mousewheel: {
       invert: true,
@@ -39,8 +39,8 @@ import '../css/styles.css';
     },
     on: {
       slideChange: function() {
-        const nextBtn = document.querySelector('.swiper-btn-next');
-        const prevBtn = document.querySelector('.swiper-btn-prev');
+        const nextBtn = document.querySelector('.swiper-proj-next');
+        const prevBtn = document.querySelector('.swiper-proj-prev');
 
         if (this.isEnd) {
           nextBtn.disabled = true;

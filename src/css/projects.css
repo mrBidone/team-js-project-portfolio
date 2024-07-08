@@ -121,7 +121,7 @@
 
   }
 
-  .swiper-btn-prev, .swiper-btn-next{
+  .swiper-proj-prev, .swiper-proj-next{
     border: 1px solid rgba(250, 250, 250, 0.2);
     background-color:#1c1d20;
   border-radius: 60px;
@@ -131,7 +131,7 @@
   justify-content: center;
 
   }
-  .swiper-btn-next{
+  .swiper-proj-next{
     border: 1px solid rgba(250, 250, 250, 0.5);
   }
 
@@ -200,7 +200,7 @@
     }
 
   }
-  .swiper-btn-prev.disabled, .swiper-btn-next.disabled {
+  .swiper-proj-prev.disabled, .swiper-proj-next.disabled {
     opacity: 0.5;
     pointer-events: none;
   }
