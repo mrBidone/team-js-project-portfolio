@@ -37,7 +37,7 @@ const swiperAboutMe = new Swiper('#swiperAbout', {
     },
     1440: {
       slidesPerView: 6,
-      width: 1264,
+      width: 1200,
     },
   },
 });
