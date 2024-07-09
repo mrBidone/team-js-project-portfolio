@@ -20,13 +20,14 @@ import '../css/styles.css';
     mousewheel: true,
     touch: true,
     centeredSlides: false,
-    loop: true,
+    loop: false,
     speed: 500,
     spaceBetween: 0,
-    slideToClickedSlide: true,
+    slideToClickedSlide: false,
      allowTouchMove: true,
     slidesPerView: 1,
     width: 343,
+    autoplay: false,
     breakpoints: {
       768: {
         slidesPerView: 1,
@@ -55,9 +56,11 @@ import '../css/styles.css';
           prevBtn.classList.add('disabled');
 
         } else {
-          prevBtn.disabled = false; 
+          prevBtn.disabled = false;
           prevBtn.classList.remove('disabled');
         }
+
+
      }
     },
   });
