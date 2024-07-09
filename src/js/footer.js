@@ -82,7 +82,7 @@ refs.contactForm.addEventListener('submit', async function (e) {
     }
 });
 
-// <!-- Modal Window-->
+// <!-- Modal -->
 function openModalWindow() {
     refs.backdropEl.classList.add('is-open')
 }
