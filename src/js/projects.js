@@ -59,7 +59,7 @@ import '../css/styles.css';
           prevBtn.disabled = false;
           prevBtn.classList.remove('disabled');
         }
-
+          
 
      }
     },
