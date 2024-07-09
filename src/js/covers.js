@@ -19,7 +19,7 @@ animationObserver.observe(refs.coverSection);
 function handleIntersection(entries) {
   entries.forEach(entry => {
     refs.itemCards.forEach(itemCard => {
-      itemCard.classList.toggle('animation', entry.isIntersecting);
+      itemCard.classList.toggle('animation-marquee', entry.isIntersecting);
     });
   });
 }
