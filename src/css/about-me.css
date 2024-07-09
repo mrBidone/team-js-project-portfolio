@@ -24,7 +24,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+  
 .about-me-descr-photo {
   display: flex;
   flex-direction: column;
