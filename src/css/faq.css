@@ -31,15 +31,17 @@
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 0;
+
+  cursor: pointer;
 }
 
 .faq-question {
   display: block;
+  width: 100%;
   font-family: inherit;
   padding: 0;
   background-color: transparent;
   border: none;
-  cursor: pointer;
   display: flex;
   justify-content: space-between;
 }
@@ -99,6 +101,7 @@
     order: 0;
     border-right: 1px solid #444;
     border-bottom: 1px solid #444;
+    padding-right: 32px;
   }
   .test4 {
     order: 1;
@@ -107,21 +110,22 @@
   .test2 {
     order: 2;
     border-right: 1px solid #444;
+    padding-right: 32px;
   }
   .test3 {
     order: 4;
     border-right: 1px solid #444;
+    padding-right: 32px;
   }
   .test5 {
     order: 3;
-
     padding-left: 32px;
   }
   .test6 {
     order: 5;
     padding-left: 32px;
   }
-  .test {
+  /* .test {
     width: 485px;
-  }
+  } */
 }
