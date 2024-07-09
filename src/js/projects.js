@@ -55,7 +55,7 @@ import '../css/styles.css';
           prevBtn.classList.add('disabled');
 
         } else {
-          prevBtn.disabled = false;
+          prevBtn.disabled = false; 
           prevBtn.classList.remove('disabled');
         }
      }
