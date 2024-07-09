@@ -7,7 +7,7 @@
 }
 
 .project-item {
-  width: 343px;/* прибрати  */
+  max-width: 343px;/* прибрати  */
 }
 .first-side {
   background-color: var(--main-text-color);
@@ -103,14 +103,11 @@ justify-content: center;
   gap: 24px;
 }
 
-.swiper-proj-prev.disabled, .swiper-proj-next.disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
+
 
 @media only screen and (min-width: 768px) {
   .project-item {
-    width: 704px;
+    max-width: 704px;
   }
 
   .first-side {
@@ -162,7 +159,7 @@ justify-content: center;
 @media only screen and (min-width: 1440px) {
   .project-item {
     display: flex;
-    width: 1376px;
+    max-width: 1376px;
   }
 
   .first-side {

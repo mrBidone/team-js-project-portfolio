@@ -60,7 +60,7 @@ import '../css/styles.css';
           prevBtn.classList.remove('disabled');
         }
 
-   
+
      }
     },
   });
