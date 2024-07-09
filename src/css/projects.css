@@ -7,7 +7,7 @@
 }
 
 .project-item {
-  max-width: 343px;
+  max-width: 100%;
 }
 .first-side {
   background-color: var(--main-text-color);
@@ -15,6 +15,7 @@
   padding: 32px;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
+
 }
 
 .tech-skills-list {

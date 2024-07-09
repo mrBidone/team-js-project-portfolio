@@ -25,16 +25,20 @@ import '../css/styles.css';
     spaceBetween: 0,
     slideToClickedSlide: false,
      allowTouchMove: true,
-    slidesPerView: 1,
+
     width: 343,
     autoplay: false,
+    slidesPerView: 1 ,
+    slidesPerGroup:1,
     breakpoints: {
       768: {
         slidesPerView: 1,
+
         width: 704,
       },
       1440: {
         slidesPerView: 1,
+
         width: 1376,
       },
     },
