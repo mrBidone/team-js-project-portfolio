@@ -1,6 +1,15 @@
 import iziToast from "izitoast";
 import imageUrlError from '../img/footer/icon-error.svg';
-import refs from '../main.js';
+const refs = {
+  contactForm: document.querySelector('.footer-form'),
+  email: document.getElementById('user-email'),
+  comments: document.getElementById('user-comment'),
+  backdropEl: document.querySelector('.footer-backdrop'),
+  modalEl: document.querySelector('.modal'),
+  closeModalBtnEl: document.querySelector('.close-btn'),
+  modalTitleEl: document.querySelector('.modal-title'),
+  modalMessageEl: document.querySelector('.modal-message'),
+};
 
 refs.contactForm.addEventListener('submit', async function (e) {
     e.preventDefault();
