@@ -2,13 +2,17 @@
 .review-author {
   line-height: 1.5;
   font-weight: 600;
-  font-size: 20px;
 }
 .review-title {
+  font-size: 16px;
   margin-bottom: 32px;
   color: var(--transparent-text-color);
 }
-
+.review-author {
+  font-size: 20px;
+  color: rgba(250, 250, 250);
+  margin-bottom: 8px;
+}
 .reviews-item {
   padding: 32px 24px;
   border-radius: 20px;
@@ -16,11 +20,6 @@
   min-height: 302px;
   margin-bottom: 32px;
 }
-
-.review-author {
-  color: rgba(250, 250, 250);
-}
-
 .review-text {
   font-size: 16px;
   line-height: 1.5;
@@ -36,11 +35,6 @@
   margin-bottom: 32px;
   border-radius: 10px;
 }
-
-.review-author {
-  margin-bottom: 8px;
-}
-
 .reviews-icon {
   width: 52px;
   height: 52px;
@@ -80,4 +74,15 @@
   font-weight: 600;
   font-size: 20px;
   color: var(--transparent-text-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-icon {
+    width: 68px;
+    height: 68px;
+    padding: 18px;
+  }
+  .swiper-btn-container {
+    gap: 20px;
+  }
 }
