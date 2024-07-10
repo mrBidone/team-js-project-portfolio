@@ -43,12 +43,19 @@ window.addEventListener('DOMContentLoaded', async () => {
     }
 
     const swiper = new Swiper('.mySwiper', {
-      modules: [Navigation, Keyboard, Mousewheel],
+      modules: [Keyboard, Mousewheel],
       direction: 'horizontal',
       slidesPerView: 1,
-      width: 343,
+      width: 292,
+
       spaceBetween: 5,
       breakpoints: {
+        375: {
+          width: 343,
+          spaceBetween: 5,
+          slidesPerView: 1,
+        },
+
         768: {
           width: 704,
           slidesPerView: 2,
