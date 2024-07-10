@@ -62,4 +62,5 @@ new Accordion('.accordion-container', {
   panelClass: 'ac-panel',
   showMultiple: true,
   duration: 800,
+  openOnInit: [0],
 });
