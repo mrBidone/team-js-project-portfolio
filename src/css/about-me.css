@@ -57,14 +57,12 @@
 .main-descr-box {
   border-radius: 24px;
   background-color: var(--cards-bg-color);
-  width: 343px;
   height: 500px;
   padding: 32px;
 }
 
 @media only screen and (min-width: 768px) {
   .main-descr-box {
-    width: 704px;
     height: 700px;
     padding: 64px;
   }
@@ -105,7 +103,6 @@
   padding-bottom: 20px;
   padding-top: 20px;
   border-bottom: solid 1px var(--transparent-elements-color);
-  cursor: pointer;
 }
 
 .ac-trigger {
@@ -122,6 +119,7 @@
   text-transform: uppercase;
   color: var(--transparent-text-color);
   background-color: transparent;
+  cursor: auto;
 }
 
 .show-btn-icon {
@@ -132,6 +130,7 @@
   height: 36px;
   fill: none;
   stroke: #fafafa;
+  cursor: pointer;
 
   transition: transform 0.5s ease-in;
 }
@@ -148,11 +147,19 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   max-height: 0;
+  visibility: hidden;
   overflow: hidden;
-  transition: max-height 1.2s ease;
 }
 
-.ac-item-information.active .ac-panel {
+.ac-item-information.is-active .ac-panel {
+  visibility: visible;
+}
+
+.ac-item-information.open .ac-panel {
+  display: block;
+}
+
+.ac-item-information.is-active .ac-panel {
   max-height: 720px;
 }
 
@@ -160,7 +167,7 @@
   margin-bottom: 12px;
 }
 
-.ac-item-information.active .show-btn-icon {
+.ac-item-information.is-active .show-btn-icon {
   transform: rotate(180deg);
 }
 

@@ -7,15 +7,15 @@
 }
 
 .project-item {
-  max-width: 100%;
+  max-width: 343px;
 }
 .first-side {
+  max-width: 100%;
   background-color: var(--main-text-color);
   color: var(--dark-text-color);
   padding: 32px;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
-
 }
 
 .tech-skills-list {
@@ -40,6 +40,7 @@
   max-width: 279px;
   margin-bottom: 32px;
 }
+
 .project-link {
   display: inline-block;
   border-radius: 60px;
@@ -58,6 +59,7 @@
 }
 
 .second-side {
+  max-width: 100%;
   background-color: var(--cards-bg-color);
   padding: 0 16px;
   border-bottom-left-radius: 24px;
@@ -68,50 +70,48 @@
   padding: 100px 0;
 }
 
-.icon-project{
+.icon-project {
   justify-content: center;
-width: 32px;
-height: 32px;
-display: inline-block;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
 
-.swiper-proj-prev, .swiper-proj-next{
+.swiper-proj-prev,
+.swiper-proj-next {
   border: 1px solid rgba(250, 250, 250, 0.2);
-  background-color:#1c1d20;
-border-radius: 60px;
-padding: 18px;
-width: 68px;
-height: 68px;
-justify-content: center;
-
-
-
+  background-color: #1c1d20;
+  border-radius: 60px;
+  padding: 18px;
+  width: 68px;
+  height: 68px;
+  justify-content: center;
 }
-.swiper-proj-next, .swiper-proj-prev{
+.swiper-proj-next,
+.swiper-proj-prev {
   border: 1px solid rgba(250, 250, 250, 0.5);
-
 }
-.swiper-proj-prev.disabled, .swiper-proj-next.disabled {
-
-      opacity: 0.35;
-      pointer-events: none;
-      cursor: auto;
-
-    }
+.swiper-proj-prev.disabled,
+.swiper-proj-next.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
 
 
-.swiper-btn{
+
+
+
+
+.swiper-btn {
+
   display: flex;
   justify-content: center;
   margin-top: 64px;
   gap: 24px;
 }
-
-
 
 @media only screen and (min-width: 768px) {
   .project-item {
@@ -157,9 +157,8 @@ justify-content: center;
     border-bottom-right-radius: 24px;
   }
 
-
   .project-img {
- width: 614px;
+    width: 614px;
     padding: 120px 0;
   }
 }
@@ -192,4 +191,3 @@ justify-content: center;
     border-bottom-right-radius: 24px;
   }
 }
-
