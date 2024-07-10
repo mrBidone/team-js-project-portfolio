@@ -1,8 +1,4 @@
-
-
-
-
-  import Swiper from 'swiper/bundle';
+ import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 import { Keyboard, Mousewheel, Navigation } from 'swiper/modules';
 import '../css/styles.css';
