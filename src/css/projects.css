@@ -24,7 +24,7 @@
   gap: 10px;
   margin-bottom: 96px;
 }
-   
+
 .tech-skills-desc {
   letter-spacing: -0.02em;
   padding: 13px 18px;
@@ -97,8 +97,10 @@ justify-content: center;
 }
 .swiper-proj-prev.disabled, .swiper-proj-next.disabled {
 
-      opacity: 0.5;
+      opacity: 0.35;
       pointer-events: none;
+      cursor: auto;
+
     }
 
 
