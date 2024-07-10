@@ -46,7 +46,6 @@ window.addEventListener('DOMContentLoaded', async () => {
       modules: [Keyboard, Mousewheel],
       direction: 'horizontal',
       slidesPerView: 1,
-      width: 292,
       spaceBetween: 16,
       breakpoints: {
         375: {
