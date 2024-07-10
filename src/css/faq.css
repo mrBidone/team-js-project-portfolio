@@ -4,35 +4,20 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: var(--transparent-text-color);
-  border-bottom: 1px solid #444;
-  width: 100%;
+  border-bottom: 1px solid var(--transparent-elements-color);
   padding-bottom: 32px;
 }
 .faq-list {
   display: grid;
   grid-template-columns: 1fr;
 }
-.icon-Icon {
-  border: 1px solid var(--transparent-elements-color);
-  border-radius: 100px;
-  padding: 7px;
-  width: 34px;
-  height: 34px;
-  fill: none;
-  stroke: #fafafa;
-  transition: transform 0.5s ease-in;
-}
-.faq-item.is-active .icon-Icon {
-  transform: rotate(180deg);
-}
+
 .faq-item {
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid var(--transparent-elements-color);
   max-width: 343px;
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 0;
-
-  cursor: pointer;
 }
 
 .faq-question {
@@ -44,6 +29,7 @@
   border: none;
   display: flex;
   justify-content: space-between;
+  cursor: auto;
 }
 
 .faq-text {
@@ -53,6 +39,22 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: var(--main-text-color);
+  max-width: 289px;
+}
+
+.icon-Icon {
+  border: 1px solid var(--transparent-elements-color);
+  border-radius: 100px;
+  padding: 7px;
+  width: 34px;
+  height: 34px;
+  fill: none;
+  stroke: #fafafa;
+  transition: transform 0.5s ease-in;
+  cursor: pointer;
+}
+.faq-item.is-active .icon-Icon {
+  transform: rotate(180deg);
 }
 
 .faq-answer {
@@ -61,11 +63,10 @@
 }
 
 .faq-answer-text {
-  font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: var(--transparent-description-color);
+  margin-top: 16px;
 }
 
 .faq-item.is-active .faq-answer {
@@ -76,15 +77,19 @@
   display: block;
 }
 
-.faq-item.is-active .faq-text {
-  margin-bottom: 16px;
-}
-
 @media only screen and (min-width: 768px) {
   .faq-list .faq-item {
     max-width: 704px;
     padding-bottom: 24px;
     padding-top: 32px;
+  }
+
+  .faq-text {
+    max-width: 574px;
+  }
+
+  .faq-text-last {
+    max-width: 475px;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -99,8 +104,8 @@
 
   .test1 {
     order: 0;
-    border-right: 1px solid #444;
-    border-bottom: 1px solid #444;
+    border-right: 1px solid var(--transparent-elements-color);
+    border-bottom: 1px solid var(--transparent-elements-color);
     padding-right: 32px;
   }
   .test4 {
@@ -109,12 +114,12 @@
   }
   .test2 {
     order: 2;
-    border-right: 1px solid #444;
+    border-right: 1px solid var(--transparent-elements-color);
     padding-right: 32px;
   }
   .test3 {
     order: 4;
-    border-right: 1px solid #444;
+    border-right: 1px solid var(--transparent-elements-color);
     padding-right: 32px;
   }
   .test5 {

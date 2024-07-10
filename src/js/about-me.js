@@ -44,10 +44,22 @@ const swiperAboutMe = new Swiper('#swiperAbout', {
 
 //////// start accordion
 
-const infoItems = document.querySelectorAll('.ac-item-information');
+// const infoItems = document.querySelectorAll('.ac-item-information');
+// const buttonElem = document.querySelector('.show-btn-icon');
 
-infoItems.forEach(infoItem => {
-  infoItem.addEventListener('click', () => {
-    infoItem.classList.toggle('active');
-  });
+// infoItems.forEach(infoItem => {
+//   infoItem.addEventListener('click', () => {
+//     infoItem.classList.toggle('active');
+//   });
+// });
+
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
+
+new Accordion('.accordion-container', {
+  elementClass: 'ac-item-information',
+  triggerClass: 'show-btn-icon',
+  panelClass: 'ac-panel',
+  showMultiple: true,
+  duration: 800,
 });
