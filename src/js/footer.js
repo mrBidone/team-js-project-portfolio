@@ -1,12 +1,38 @@
-const contactForm = document.querySelector('.footer-form');
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+import imageUrlError from '../img/footer/icon-error.svg';
 
-contactForm.addEventListener('submit', async function (e) {
+const refs = {
+  contactForm: document.querySelector('.footer-form'),
+  email: document.getElementById('user-email'),
+  comments: document.getElementById('user-comment'),
+  backdropEl: document.querySelector('.footer-backdrop'),
+  modalEl: document.querySelector('.modal'),
+  closeModalBtnEl: document.querySelector('.close-btn'),
+  modalTitleEl: document.querySelector('.modal-title'),
+  modalMessageEl: document.querySelector('.modal-message'),
+};
+
+refs.contactForm.addEventListener('submit', async function (e) {
   e.preventDefault();
 
-  const email = document.getElementById('user-email').value;
-  const comments = document.getElementById('user-comment').value;
+  const email = refs.email.value;
+  const comments = refs.comments.value;
   if (!email || !comments) {
-    alert('Please fill in both fields');
+    iziToast.error({
+      title: 'Error!',
+      titleSize: '16',
+      titleColor: 'var(--main-text-color)',
+      message: 'Please fill in both fields',
+      messageSize: '16',
+      messageColor: 'var(--main-text-color)',
+      backgroundColor: 'var(--accent-color)',
+      theme: 'dark',
+      position: 'center',
+      closeOnEscape: true,
+      closeOnClick: true,
+      iconUrl: imageUrlError,
+    });
     return;
   }
 
@@ -18,51 +44,73 @@ contactForm.addEventListener('submit', async function (e) {
   };
 
   try {
-    const response = await fetch('https://portfolio-js.b.goit.study/api-docs', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(dataLoad),
-    });
+    const response = await fetch(
+      'https://portfolio-js.b.goit.study/api/requests',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(dataLoad),
+      }
+    );
     const data = await response.json();
 
     if (data.error) {
-      console.log('Error: ' + data.error);
+      iziToast.error({
+        title: 'Error!',
+        titleSize: '16',
+        titleColor: 'var(--main-text-color)',
+        message: `${data.error}`,
+        messageSize: '16',
+        messageColor: 'var(--main-text-color)',
+        backgroundColor: 'var(--accent-color)',
+        theme: 'dark',
+        position: 'bottomCenter',
+        closeOnEscape: true,
+        closeOnClick: true,
+        iconUrl: imageUrlError,
+      });
     } else {
-      contactForm.reset();
+      refs.contactForm.reset();
     }
-    modalTitleEl.textContent = data.title;
-    modalMessageEl.textContent = data.message;
+
+    refs.modalTitleEl.textContent = data.title;
+    refs.modalMessageEl.textContent = data.message;
     openModalWindow();
   } catch (error) {
-    alert('Error: ' + error.message);
+    iziToast.error({
+      title: 'Error!',
+      titleSize: '16',
+      titleColor: 'var(--main-text-color)',
+      message: `${error.message}`,
+      messageSize: '16',
+      messageColor: 'var(--main-text-color)',
+      backgroundColor: 'var(--accent-color)',
+      theme: 'dark',
+      position: 'bottomCenter',
+      closeOnEscape: true,
+      closeOnClick: true,
+      iconUrl: imageUrlError,
+    });
   }
 });
 
 // <!-- Modal -->
-
-const backdropEl = document.querySelector('.footer-backdrop');
-const modalEl = document.querySelector('.modal');
-const closeModalBtnEl = document.querySelector('.close-btn');
-const modalTitleEl = document.querySelector('.modal-title');
-const modalMessageEl = document.querySelector('.modal-message');
-
 function openModalWindow() {
-  backdropEl.classList.add('is-open');
+  refs.backdropEl.classList.add('is-open');
 }
 function closeModalWindow() {
-  backdropEl.classList.remove('is-open');
+  refs.backdropEl.classList.remove('is-open');
 }
-
-closeModalBtnEl.addEventListener('click', closeModalWindow);
+refs.closeModalBtnEl.addEventListener('click', closeModalWindow);
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && backdropEl.classList.contains('is-open')) {
+  if (e.key === 'Escape' && refs.backdropEl.classList.contains('is-open')) {
     closeModalWindow();
   }
 });
 document.addEventListener('click', e => {
-  const click = e.composedPath().includes(modalEl);
+  const click = e.composedPath().includes(refs.modalEl);
   if (!click) {
     closeModalWindow();
   }

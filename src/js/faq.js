@@ -1,12 +1,12 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-
 new Accordion('.faq-list', {
-    elementClass: "faq-item",
-    triggerClass: "faq-question",
-    panelClass: "faq-answer",
-    showMultiple: true,
+  elementClass: 'faq-item',
+  triggerClass: 'circle',
+  panelClass: 'faq-answer',
+  showMultiple: true,
+  duration: 800,
 });
 
 // document.addEventListener('DOMContentLoaded', function() {

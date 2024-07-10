@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         const reviewItem = document.createElement('li');
         reviewItem.classList.add('swiper-slide');
         reviewItem.classList.add('reviews-item');
-        reviewItem.innerHTML = `<div width="100%"> 
+        reviewItem.innerHTML = ` 
             <img 
               src="${review.avatar_url}" 
               alt="author's photo" 
@@ -37,24 +37,34 @@ window.addEventListener('DOMContentLoaded', async () => {
               height="48px" 
             /> 
             <p class="review-author">${review.author}</p> 
-            <p class="review-text">${review.review}</p> 
-          </div>`;
+            <p class="review-text">${review.review}</p>`;
         refs.reviewsList.appendChild(reviewItem);
       });
     }
 
     const swiper = new Swiper('.mySwiper', {
-      modules: [Navigation, Keyboard, Mousewheel],
+      modules: [Keyboard, Mousewheel],
       direction: 'horizontal',
+      slidesPerView: 1,
+      width: 292,
+
+      spaceBetween: 5,
       breakpoints: {
-        1440: {
-          slidesPerView: 4,
-        },
-        768: {
-          slidesPerView: 2,
-        },
         375: {
+          width: 343,
+          spaceBetween: 5,
           slidesPerView: 1,
+        },
+
+        768: {
+          width: 704,
+          slidesPerView: 2,
+          spaceBetween: 16,
+        },
+        1440: {
+          width: 1376,
+          slidesPerView: 4,
+          spaceBetween: 16,
         },
       },
       navigation: {

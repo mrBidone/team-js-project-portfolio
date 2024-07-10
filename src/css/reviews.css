@@ -2,87 +2,39 @@
 .review-author {
   line-height: 1.5;
   font-weight: 600;
-  font-size: 20px;
 }
 .review-title {
+  font-size: 16px;
   margin-bottom: 32px;
   color: var(--transparent-text-color);
 }
-.reviews-list {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
+.review-author {
+  font-size: 20px;
+  color: rgba(250, 250, 250);
+  margin-bottom: 8px;
+}
+.reviews-item {
+  padding: 32px 24px;
+  border-radius: 20px;
+  border: 1px solid var(--transparent-elements-color);
+  min-height: 302px;
   margin-bottom: 32px;
 }
-
-/* .reviews-item {
-  width: 344px;
-  min-height: 302px;
-  padding: 32px;
-} */
-
-.review-author {
-  color: rgba(250, 250, 250);
-}
-
 .review-text {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
   color: rgba(250, 250, 250, 0.6);
-  width: 284px;
-  height: 120px;
-  /* text-overflow: ellipsis; */
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  /* white-space: nowrap; */
-}
-
-ul > .reviews-item {
-  border-radius: 20px;
-  border: 1px solid var(--transparent-elements-color);
-  padding: 32px;
-  height: 302px;
-}
-
-@media screen and (min-width: 1440px) {
-  .reviews-item {
-    width: 332px !important;
-  }
-  .reviews-container {
-    min-width: 1376px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .reviews-container {
-    width: 704px;
-  }
-  .review-text {
-    width: 296px;
-  }
-  .reviews-item {
-    width: 344px !important;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .reviews-icon {
-    width: 52px;
-  }
-  .review-text {
-    width: 295px;
-  }
-  .reviews-item {
-    width: 344px !important;
-  }
 }
 
 .review-photo {
   margin-bottom: 32px;
+  border-radius: 10px;
 }
-.review-author {
-  margin-bottom: 8px;
-}
-
 .reviews-icon {
   width: 52px;
   height: 52px;
@@ -116,9 +68,21 @@ ul > .reviews-item {
   border: 1px solid var(--transparent-elements-color);
   margin-bottom: 32px;
 }
+
 .error-reviews-msg {
   line-height: 1.5;
   font-weight: 600;
   font-size: 20px;
   color: var(--transparent-text-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-icon {
+    width: 68px;
+    height: 68px;
+    padding: 18px;
+  }
+  .swiper-btn-container {
+    gap: 20px;
+  }
 }
