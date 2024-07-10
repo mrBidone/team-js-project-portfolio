@@ -11,7 +11,7 @@
 }
 
 .covers-container {
-  max-width: 375px;
+  max-width: 100vh;
 }
 
 .covers-section {
@@ -85,7 +85,7 @@
 
 @media only screen and (min-width: 768px) {
   .covers-container {
-    max-width: 768px;
+    max-width: 100vh;
   }
   .covers-section {
     height: 960px;
@@ -109,7 +109,7 @@
 
 @media only screen and (min-width: 1440px) {
   .covers-container {
-    max-width: 1440px;
+    max-width: 100vh;
   }
   .marquee {
     top: -450px;

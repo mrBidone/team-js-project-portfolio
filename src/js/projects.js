@@ -21,7 +21,7 @@ const swiperProject = new Swiper('#swiperProject', {
   centeredSlides: false,
   loop: false,
   speed: 500,
-  spaceBetween: 0,
+  spaceBetween: 5,
   slideToClickedSlide: false,
   allowTouchMove: true,
 
@@ -32,11 +32,13 @@ const swiperProject = new Swiper('#swiperProject', {
   breakpoints: {
     768: {
       slidesPerView: 1,
+      spaceBetween: 10,
 
       width: 704,
     },
     1440: {
       slidesPerView: 1,
+      spaceBetween: 10,
 
       width: 1376,
     },
