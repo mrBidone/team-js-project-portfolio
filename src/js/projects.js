@@ -5,7 +5,7 @@ import '../css/styles.css';
 
 
   const swiperProject = new Swiper('#swiperProject', {
-    modules: [Navigation, Keyboard, Mousewheel],
+    modules: [ Keyboard, Mousewheel],
     navigation: {
       nextEl: '.swiper-proj-next',
       prevEl: '.swiper-proj-prev'
@@ -28,8 +28,6 @@ import '../css/styles.css';
 
     width: 343,
     autoplay: false,
-    slidesPerView: 1 ,
-    slidesPerGroup:1,
     breakpoints: {
       768: {
         slidesPerView: 1,
