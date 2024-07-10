@@ -3,7 +3,7 @@ import 'accordion-js/dist/accordion.min.css';
 
 new Accordion('.faq-list', {
   elementClass: 'faq-item',
-  triggerClass: 'circle',
+  triggerClass: 'icon-Icon',
   panelClass: 'faq-answer',
   showMultiple: true,
   duration: 800,
