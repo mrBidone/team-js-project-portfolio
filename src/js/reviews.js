@@ -47,12 +47,11 @@ window.addEventListener('DOMContentLoaded', async () => {
       direction: 'horizontal',
       slidesPerView: 1,
       width: 292,
-
-      spaceBetween: 5,
+      spaceBetween: 16,
       breakpoints: {
         375: {
           width: 343,
-          spaceBetween: 5,
+          spaceBetween: 16,
           slidesPerView: 1,
         },
 

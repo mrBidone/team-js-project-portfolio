@@ -1,17 +1,16 @@
-.review-title,
-.review-author {
-  line-height: 1.5;
-  font-weight: 600;
-}
 .review-title {
   font-size: 16px;
   margin-bottom: 32px;
   color: var(--transparent-text-color);
+  line-height: 1.5;
+  font-weight: 600;
 }
 .review-author {
   font-size: 20px;
   color: rgba(250, 250, 250);
   margin-bottom: 8px;
+  line-height: 1.5;
+  font-weight: 600;
 }
 .reviews-item {
   padding: 32px 24px;
