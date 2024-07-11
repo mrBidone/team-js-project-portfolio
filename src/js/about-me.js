@@ -63,4 +63,8 @@ new Accordion('.accordion-container', {
   showMultiple: true,
   duration: 800,
   openOnInit: [0],
+  beforeOpen: el =>
+    el.querySelector('button.ac-trigger').setAttribute('aria-expanded', true),
+  beforeClose: el =>
+    el.querySelector('button.ac-trigger').setAttribute('aria-expanded', false),
 });
