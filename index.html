@@ -25,7 +25,9 @@
         <span>jefferson*</span>
       </a>
       <div class="dropdown-menu">
-        <button class="dropbtn hover-animation">Menu</button>
+        <button class="dropbtn hover-animation" aria-label="navigation menu">
+          Menu
+        </button>
         <ul id="dropdown" class="nav-links-container dropdown-content">
           <li class="nav-link-item">
             <a href="#about-me" class="nav-link hover-animation">About me</a>
@@ -43,7 +45,11 @@
       </div>
       <div></div>
     </nav>
-    <button class="hamburger-menu-open-button" data-menu-open>
+    <button
+      class="hamburger-menu-open-button"
+      aria-label="open mobile menu"
+      data-menu-open
+    >
       <svg class="icon" width="28" height="28">
         <use href="/team-js-project-portfolio/assets/sprite-0d8b1d96.svg#icon-burger" />
       </svg>
@@ -57,7 +63,11 @@
 <!-- Mobile menu -->
 <div class="mobile-menu is-hidden" data-menu>
   <div class="mobile-menu-container">
-    <button class="mobile-menu-close-button" data-menu-close>
+    <button
+      class="mobile-menu-close-button"
+      aria-label="close mobile menu"
+      data-menu-close
+    >
       <svg class="icon" width="28" height="28" data-menu-close>
         <use href="/team-js-project-portfolio/assets/sprite-0d8b1d96.svg#icon-close" data-menu-close />
       </svg>
@@ -187,7 +197,12 @@
     <ul class="accordion-container">
       <li class="ac-item-information firsst-elem-ac">
         <h3 class="ac-header-information">
-          <button type="button" class="ac-trigger">
+          <button
+            type="button"
+            class="ac-trigger"
+            aria-label="about me chapter"
+            aria-expanded="true"
+          >
             About me
             <svg class="show-btn-icon hover-animation" aria-label="arrow down">
               <use href="/team-js-project-portfolio/assets/sprite-0d8b1d96.svg#icon-arrow-down"></use>
@@ -220,7 +235,12 @@
       </li>
       <li class="ac-item-information">
         <h3 class="ac-header-information">
-          <button type="button" class="ac-trigger">
+          <button
+            type="button"
+            class="ac-trigger"
+            aria-label="role chapter"
+            aria-expanded="false"
+          >
             Role
             <svg class="show-btn-icon hover-animation" aria-label="arrow-down">
               <use href="/team-js-project-portfolio/assets/sprite-0d8b1d96.svg#icon-arrow-down"></use>
@@ -235,7 +255,12 @@
       </li>
       <li class="ac-item-information">
         <h3 class="ac-header-information">
-          <button type="button" class="ac-trigger">
+          <button
+            type="button"
+            class="ac-trigger"
+            aria-label="ducation chapter"
+            aria-expanded="false"
+          >
             Education
             <svg class="show-btn-icon hover-animation" aria-label="arrow-down">
               <use href="/team-js-project-portfolio/assets/sprite-0d8b1d96.svg#icon-arrow-down"></use>
@@ -795,7 +820,7 @@
       </div>
     </div>
   </div>
-  <button id="myBtn">
+  <button id="myBtn" aria-label="scroll to top">
     <svg class="svg-up">
       <use href="/team-js-project-portfolio/assets/sprite-0d8b1d96.svg#icon-arrow-up"></use>
     </svg>
@@ -833,7 +858,14 @@
         placeholder="comments"
         autocomplete="off"
       />
-      <button class="footer-form-btn" id="form-btn" type="submit">Send</button>
+      <button
+        class="footer-form-btn"
+        id="form-btn"
+        type="submit"
+        aria-label="submit form"
+      >
+        Send
+      </button>
     </form>
     <address class="footer-bottom">
       <ul class="contacts">
@@ -857,7 +889,7 @@
 <div class="footer-backdrop">
   <div class="modal">
     <div class="modal-box">
-      <button class="close-btn" type="button">
+      <button class="close-btn" type="button" aria-label="close modal">
         <svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             class="icon-close"
