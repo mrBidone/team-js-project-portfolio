@@ -97,21 +97,56 @@ refs.contactForm.addEventListener('submit', async function (e) {
 });
 
 // <!-- Modal -->
+// function openModalWindow() {
+//   refs.backdropEl.classList.add('is-open');
+// }
+// function closeModalWindow() {
+//   refs.backdropEl.classList.remove('is-open');
+// }
+// refs.closeModalBtnEl.addEventListener('click', closeModalWindow);
+// document.addEventListener('keydown', e => {
+//   if (e.key === 'Escape' && refs.backdropEl.classList.contains('is-open')) {
+//     closeModalWindow();
+//   }
+// });
+// document.addEventListener('click', e => {
+//   const click = e.composedPath().includes(refs.modalEl);
+//   if (!click) {
+//     closeModalWindow();
+//   }
+// });
+
 function openModalWindow() {
   refs.backdropEl.classList.add('is-open');
+  addEventListeners();
 }
+
 function closeModalWindow() {
   refs.backdropEl.classList.remove('is-open');
+  removeEventListeners();
 }
-refs.closeModalBtnEl.addEventListener('click', closeModalWindow);
-document.addEventListener('keydown', e => {
+
+function addEventListeners() {
+  document.addEventListener('keydown', handleKeyDown);
+  document.addEventListener('click', handleBackdropClick);
+}
+
+function removeEventListeners() {
+  document.removeEventListener('keydown', handleKeyDown);
+  document.removeEventListener('click', handleBackdropClick);
+}
+
+function handleKeyDown(e) {
   if (e.key === 'Escape' && refs.backdropEl.classList.contains('is-open')) {
     closeModalWindow();
   }
-});
-document.addEventListener('click', e => {
+}
+
+function handleBackdropClick(e) {
   const click = e.composedPath().includes(refs.modalEl);
   if (!click) {
     closeModalWindow();
   }
-});
+}
+
+refs.closeModalBtnEl.addEventListener('click', closeModalWindow);
