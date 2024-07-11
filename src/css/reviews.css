@@ -108,13 +108,23 @@
   justify-content: center;
   border-radius: 50%;
   cursor: pointer;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .top-btn {
+  /* /замаскував зайву кнопку =))) */
+  background-color: transparent;
+  border: none;
   position: relative;
 }
 
 #myBtn:hover {
   background-color: var(--accent-color-second);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: scale(1.2);
+}
+
+@media only screen and (max-width: 370px) {
+  .top-btn {
+    display: none;
+  }
 }
