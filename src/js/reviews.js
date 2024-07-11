@@ -28,15 +28,15 @@ window.addEventListener('DOMContentLoaded', async () => {
         const reviewItem = document.createElement('li');
         reviewItem.classList.add('swiper-slide');
         reviewItem.classList.add('reviews-item');
-        reviewItem.innerHTML = ` 
-            <img 
-              src="${review.avatar_url}" 
-              alt="author's photo" 
-              class="review-photo" 
-              width="48px" 
-              height="48px" 
-            /> 
-            <p class="review-author">${review.author}</p> 
+        reviewItem.innerHTML = `  
+            <img  
+              src="${review.avatar_url}"  
+              alt="author's photo"  
+              class="review-photo"  
+              width="48px"  
+              height="48px"  
+            />  
+            <p class="review-author">${review.author}</p>  
             <p class="review-text">${review.review}</p>`;
         refs.reviewsList.appendChild(reviewItem);
       });
