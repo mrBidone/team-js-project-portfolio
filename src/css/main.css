@@ -69,3 +69,10 @@ html {
     padding: 82px 0;
   }
 }
+
+.hover-animation {
+  transition: border-color var(--default-duration) var(--timing-function),
+    background-color var(--default-duration) var(--timing-function),
+    stroke var(--default-duration) var(--timing-function),
+    color var(--default-duration) var(--timing-function);
+}

@@ -55,7 +55,6 @@
   max-height: 34px;
   fill: none;
   stroke: #fafafa;
-  transition: transform 0.5s ease-in;
   cursor: pointer;
 }
 
