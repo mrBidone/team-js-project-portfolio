@@ -11,7 +11,9 @@
         <span>jefferson*</span>
       </a>
       <div class="dropdown-menu">
-        <button class="dropbtn hover-animation">Menu</button>
+        <button class="dropbtn hover-animation" aria-label="navigation menu">
+          Menu
+        </button>
         <ul id="dropdown" class="nav-links-container dropdown-content">
           <li class="nav-link-item">
             <a href="#about-me" class="nav-link hover-animation">About me</a>
@@ -29,7 +31,11 @@
       </div>
       <div></div>
     </nav>
-    <button class="hamburger-menu-open-button" data-menu-open>
+    <button
+      class="hamburger-menu-open-button"
+      aria-label="open mobile menu"
+      data-menu-open
+    >
       <svg class="icon" width="28" height="28">
         <use href="./img/svg/sprite.svg#icon-burger" />
       </svg>
@@ -43,7 +49,11 @@
 <!-- Mobile menu -->
 <div class="mobile-menu is-hidden" data-menu>
   <div class="mobile-menu-container">
-    <button class="mobile-menu-close-button" data-menu-close>
+    <button
+      class="mobile-menu-close-button"
+      aria-label="close mobile menu"
+      data-menu-close
+    >
       <svg class="icon" width="28" height="28" data-menu-close>
         <use href="./img/svg/sprite.svg#icon-close" data-menu-close />
       </svg>
