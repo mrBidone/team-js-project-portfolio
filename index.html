@@ -9,7 +9,7 @@
     <script type="module" crossorigin src="/team-js-project-portfolio/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/team-js-project-portfolio/assets/vendor-7ab59554.js">
     <link rel="stylesheet" href="/team-js-project-portfolio/assets/vendor-d9447e15.css">
-    <link rel="stylesheet" href="/team-js-project-portfolio/assets/index-b3000f54.css">
+    <link rel="stylesheet" href="/team-js-project-portfolio/assets/index-53ce4008.css">
   </head>
   <body>
     <!-- Header -->
@@ -21,6 +21,7 @@
           src="./img/header/logo-x1.png"
           srcset="/team-js-project-portfolio/assets/logo-725dc0db.png 1x, /team-js-project-portfolio/assets/logo-@x2-aeb6da26.png 2x"
           alt="logo"
+          loading="lazy"
         />
         <span>jefferson*</span>
       </a>
@@ -100,7 +101,7 @@
 
     <main>
       <!-- Hero -->
-<section class="hero">
+<section class="hero lazy-bg">
   <div class="container">
     <h1 class="hero-title">
       Hello.<br />I’m Fullstack developer Lloyd Jefferson.
@@ -177,19 +178,23 @@
           <source
             srcset="/team-js-project-portfolio/assets/portrait_desktop-a451a218.png 1x, /team-js-project-portfolio/assets/portrait_desktop@2x-96e5a7c5.png 2x"
             media="(min-width: 1440px)"
+            loading="lazy"
           />
           <source
             srcset="/team-js-project-portfolio/assets/portrait_tablet-4b033bf2.png 1x, /team-js-project-portfolio/assets/portrait_tablet@2x-e945cb4a.png 2x"
             media="(min-width: 768px)"
+            loading="lazy"
           />
           <source
             srcset="/team-js-project-portfolio/assets/portrait_mobile-ba2db4e2.png 1x, /team-js-project-portfolio/assets/portrait_mobile@2x-a30b38fc.png 2x"
             media="(max-width: 767px)"
+            loading="lazy"
           />
           <img
             class="portrait-img"
             src="/team-js-project-portfolio/assets/portrait_desktop-a451a218.png"
             alt="Portrait of developer"
+            loading="lazy"
           />
         </picture>
       </div>
@@ -419,110 +424,176 @@
     <div class="project-swiper swiper" id="swiperProject">
       <ul class="project-list swiper-wrapper">
         <!-- Project Item 1 -->
-        <li class="project-item swiper-slide">
-          <div class="first-side">
-            <ul class="tech-skills-list">
-              <li class="tech-skills-item"><p class="tech-skills-desc">#react</p></li>
-              <li class="tech-skills-item"><p class="tech-skills-desc">#js</p></li>
-              <li class="tech-skills-item"><p class="tech-skills-desc">#node js</p></li>
-              <li class="tech-skills-item"><p class="tech-skills-desc">#git</p></li>
-            </ul>
-            <h3 class="card-title">Programming Across Borders: Ideas, Technologies, Innovations</h3>
-            <a class="project-link" href="https://github.com/mrBidone/team-js-project-portfolio" target="_blank" rel="noopener noreferrer">See project</a>
-          </div>
-          <div class="second-side">
-            <picture>
-              <source
-                srcset="/team-js-project-portfolio/assets/project1des-c84cf753.png 1x, /team-js-project-portfolio/assets/project1des-c84cf753.png 2x"
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="/team-js-project-portfolio/assets/project1min-23827c5f.png 1x, /team-js-project-portfolio/assets/project1min-23827c5f.png 2x"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="/team-js-project-portfolio/assets/phone-project-bf77dedf.jpg 1x, /team-js-project-portfolio/assets/phone-project@2x-e495ca2a.jpg 2x"
-                media="(max-width: 767px)"
-              />
-              <img
-                class="project-img"
-                srcset="/team-js-project-portfolio/assets/phone-project-bf77dedf.jpg 1x, /team-js-project-portfolio/assets/phone-project@2x-e495ca2a.jpg 2x"
-                src="/team-js-project-portfolio/assets/phone-project-bf77dedf.jpg"
-                alt="project illustration"
-              />
-            </picture>
+        <li class="swiper-slide">
+          <div class="project-item">
+            <div class="first-side">
+              <ul class="tech-skills-list">
+                <li class="tech-skills-item">
+                  <p class="tech-skills-desc">#react</p>
+                </li>
+                <li class="tech-skills-item">
+                  <p class="tech-skills-desc">#js</p>
+                </li>
+                <li class="tech-skills-item">
+                  <p class="tech-skills-desc">#node js</p>
+                </li>
+                <li class="tech-skills-item">
+                  <p class="tech-skills-desc">#git</p>
+                </li>
+              </ul>
+              <h3 class="card-title">
+                Programming Across Borders: Ideas, Technologies, Innovations
+              </h3>
+              <a
+                class="project-link"
+                href="https://github.com/mrBidone/team-js-project-portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                >See project</a
+              >
+            </div>
+            <div class="second-side">
+              <picture>
+                <source
+                  srcset="/team-js-project-portfolio/assets/project1des-c84cf753.png 1x, /team-js-project-portfolio/assets/project1des-c84cf753.png 2x"
+                  media="(min-width: 1440px)"
+                  loading="lazy"
+                />
+                <source
+                  srcset="/team-js-project-portfolio/assets/project1min-23827c5f.png 1x, /team-js-project-portfolio/assets/project1min-23827c5f.png 2x"
+                  media="(min-width: 768px)"
+                  loading="lazy"
+                />
+                <source
+                  srcset="/team-js-project-portfolio/assets/phone-project-bf77dedf.jpg 1x, /team-js-project-portfolio/assets/phone-project@2x-e495ca2a.jpg 2x"
+                  media="(max-width: 767px)"
+                  loading="lazy"
+                />
+                <img
+                  class="project-img"
+                  srcset="/team-js-project-portfolio/assets/phone-project-bf77dedf.jpg 1x, /team-js-project-portfolio/assets/phone-project@2x-e495ca2a.jpg 2x"
+                  src="/team-js-project-portfolio/assets/phone-project-bf77dedf.jpg"
+                  alt="project illustration"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
           </div>
         </li>
 
         <!-- Project Item 2 -->
-        <li class="project-item swiper-slide">
-          <div class="first-side">
-            <ul class="tech-skills-list">
-              <li class="tech-skills-item"><p class="tech-skills-desc">#react</p></li>
-              <li class="tech-skills-item"><p class="tech-skills-desc">#js</p></li>
-              <li class="tech-skills-item"><p class="tech-skills-desc">#node js</p></li>
-              <li class="tech-skills-item"><p class="tech-skills-desc">#git</p></li>
-            </ul>
-            <h3 class="card-title">Programming Across Borders: Ideas, Technologies, Innovations</h3>
-            <a class="project-link" href="https://github.com/mrBidone/team-js-project-portfolio" target="_blank" rel="noopener noreferrer">See project</a>
-          </div>
-          <div class="second-side">
-            <picture>
-              <source
-                srcset="/team-js-project-portfolio/assets/project2min-d675d4f2.png 1x, /team-js-project-portfolio/assets/project2@2x-bc5238ea.png 2x"
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="/team-js-project-portfolio/assets/project2min-d675d4f2.png 1x, /team-js-project-portfolio/assets/project2min-d675d4f2.png 2x"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="/team-js-project-portfolio/assets/petlove-project-23d9aff9.jpg 1x, /team-js-project-portfolio/assets/petlove-project@2x-9e619840.jpg 2x"
-                media="(max-width: 767px)"
-              />
-              <img
-                class="project-img project-img2"
-                srcset="/team-js-project-portfolio/assets/petlove-project-23d9aff9.jpg 1x, /team-js-project-portfolio/assets/petlove-project@2x-9e619840.jpg 2x"
-                src="/team-js-project-portfolio/assets/petlove-project-23d9aff9.jpg"
-                alt="project illustration"
-              />
-            </picture>
+        <li class="swiper-slide">
+          <div class="project-item">
+            <div class="first-side">
+              <ul class="tech-skills-list">
+                <li class="tech-skills-item">
+                  <p class="tech-skills-desc">#react</p>
+                </li>
+                <li class="tech-skills-item">
+                  <p class="tech-skills-desc">#js</p>
+                </li>
+                <li class="tech-skills-item">
+                  <p class="tech-skills-desc">#node js</p>
+                </li>
+                <li class="tech-skills-item">
+                  <p class="tech-skills-desc">#git</p>
+                </li>
+              </ul>
+              <h3 class="card-title">
+                Programming Across Borders: Ideas, Technologies, Innovations
+              </h3>
+              <a
+                class="project-link"
+                href="https://github.com/mrBidone/team-js-project-portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                >See project</a
+              >
+            </div>
+            <div class="second-side">
+              <picture>
+                <source
+                  srcset="/team-js-project-portfolio/assets/project2min-d675d4f2.png 1x, /team-js-project-portfolio/assets/project2@2x-bc5238ea.png 2x"
+                  media="(min-width: 1440px)"
+                  loading="lazy"
+                />
+                <source
+                  srcset="/team-js-project-portfolio/assets/project2min-d675d4f2.png 1x, /team-js-project-portfolio/assets/project2min-d675d4f2.png 2x"
+                  media="(min-width: 768px)"
+                  loading="lazy"
+                />
+                <source
+                  srcset="/team-js-project-portfolio/assets/petlove-project-23d9aff9.jpg 1x, /team-js-project-portfolio/assets/petlove-project@2x-9e619840.jpg 2x"
+                  media="(max-width: 767px)"
+                  loading="lazy"
+                />
+                <img
+                  class="project-img project-img2"
+                  srcset="/team-js-project-portfolio/assets/petlove-project-23d9aff9.jpg 1x, /team-js-project-portfolio/assets/petlove-project@2x-9e619840.jpg 2x"
+                  src="/team-js-project-portfolio/assets/petlove-project-23d9aff9.jpg"
+                  alt="project illustration"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
           </div>
         </li>
 
         <!-- Project Item 3 -->
-        <li class="project-item swiper-slide">
-          <div class="first-side">
-            <ul class="tech-skills-list">
-              <li class="tech-skills-item"><p class="tech-skills-desc">#react</p></li>
-              <li class="tech-skills-item"><p class="tech-skills-desc">#js</p></li>
-              <li class="tech-skills-item"><p class="tech-skills-desc">#node js</p></li>
-              <li class="tech-skills-item"><p class="tech-skills-desc">#git</p></li>
-            </ul>
-            <h3 class="card-title">Programming Across Borders: Ideas, Technologies, Innovations</h3>
-            <a class="project-link" href="https://github.com/mrBidone/team-js-project-portfolio" target="_blank" rel="noopener noreferrer">See project</a>
-          </div>
-          <div class="second-side">
-            <picture>
-              <source
-                srcset="/team-js-project-portfolio/assets/project3min-1f3d51ff.png 1x, /team-js-project-portfolio/assets/project3@2x-0648e4be.png 2x"
-                media="(min-width: 1440px)"
-              />
-              <source
-                srcset="/team-js-project-portfolio/assets/project3min-1f3d51ff.png 1x, /team-js-project-portfolio/assets/project3min-1f3d51ff.png 2x"
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="/team-js-project-portfolio/assets/family-project-1d941a87.jpg 1x, /team-js-project-portfolio/assets/family-project@2x-7fedd50e.jpg 2x"
-                media="(max-width: 767px)"
-              />
-              <img
-                class="project-img project-img3"
-                srcset="/team-js-project-portfolio/assets/family-project-1d941a87.jpg 1x, /team-js-project-portfolio/assets/family-project@2x-7fedd50e.jpg 2x"
-                src="/team-js-project-portfolio/assets/family-project-1d941a87.jpg"
-                alt="project illustration"
-              />
-            </picture>
+        <li class="swiper-slide">
+          <div class="project-item">
+            <div class="first-side">
+              <ul class="tech-skills-list">
+                <li class="tech-skills-item">
+                  <p class="tech-skills-desc">#react</p>
+                </li>
+                <li class="tech-skills-item">
+                  <p class="tech-skills-desc">#js</p>
+                </li>
+                <li class="tech-skills-item">
+                  <p class="tech-skills-desc">#node js</p>
+                </li>
+                <li class="tech-skills-item">
+                  <p class="tech-skills-desc">#git</p>
+                </li>
+              </ul>
+              <h3 class="card-title">
+                Programming Across Borders: Ideas, Technologies, Innovations
+              </h3>
+              <a
+                class="project-link"
+                href="https://github.com/mrBidone/team-js-project-portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                >See project</a
+              >
+            </div>
+            <div class="second-side">
+              <picture>
+                <source
+                  srcset="/team-js-project-portfolio/assets/project3min-1f3d51ff.png 1x, /team-js-project-portfolio/assets/project3@2x-0648e4be.png 2x"
+                  media="(min-width: 1440px)"
+                  loading="lazy"
+                />
+                <source
+                  srcset="/team-js-project-portfolio/assets/project3min-1f3d51ff.png 1x, /team-js-project-portfolio/assets/project3min-1f3d51ff.png 2x"
+                  media="(min-width: 768px)"
+                  loading="lazy"
+                />
+                <source
+                  srcset="/team-js-project-portfolio/assets/family-project-1d941a87.jpg 1x, /team-js-project-portfolio/assets/family-project@2x-7fedd50e.jpg 2x"
+                  media="(max-width: 767px)"
+                  loading="lazy"
+                />
+                <img
+                  class="project-img project-img3"
+                  srcset="/team-js-project-portfolio/assets/family-project-1d941a87.jpg 1x, /team-js-project-portfolio/assets/family-project@2x-7fedd50e.jpg 2x"
+                  src="/team-js-project-portfolio/assets/family-project-1d941a87.jpg"
+                  alt="project illustration"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
           </div>
         </li>
       </ul>
@@ -542,24 +613,6 @@
   </div>
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <!-- section FAQ -->
 
 <section id="faq" class="section">
@@ -567,9 +620,14 @@
     <h2 class="faq-title">FAQ</h2>
     <ul class="faq-list">
       <li class="faq-item test1">
-        <button type="button" class="faq-question test">
-          <span class="faq-text">
-            What programming languages ​​are most often used in your project?
+        <button
+          type="button"
+          class="faq-question test"
+          aria-labelledby="faq-q-1"
+          aria-expanded="false"
+        >
+          <span id="faq-q-1" class="faq-text">
+            What programming languages are most often used in your project?
           </span>
           <svg class="icon-Icon hover-animation" aria-label="arrow down">
             <use href="/team-js-project-portfolio/assets/sprite-0d8b1d96.svg#icon-arrow-down"></use>
@@ -586,8 +644,15 @@
       </li>
 
       <li class="faq-item test2">
-        <button type="button" class="faq-question">
-          <span class="faq-text">What are the deadlines for the project?</span>
+        <button
+          type="button"
+          class="faq-question"
+          aria-labelledby="faq-q-2"
+          aria-expanded="false"
+        >
+          <span id="faq-q-2" class="faq-text">
+            What are the deadlines for the project?
+          </span>
           <svg class="icon-Icon hover-animation" aria-label="arrow down">
             <use href="/team-js-project-portfolio/assets/sprite-0d8b1d96.svg#icon-arrow-down"></use>
           </svg>
@@ -604,8 +669,15 @@
       </li>
 
       <li class="faq-item test3">
-        <button type="button" class="faq-question test">
-          <span class="faq-text">What payment methods do you accept?</span>
+        <button
+          type="button"
+          class="faq-question test"
+          aria-labelledby="faq-q-3"
+          aria-expanded="false"
+        >
+          <span id="faq-q-3" class="faq-text">
+            What payment methods do you accept?
+          </span>
           <svg class="icon-Icon hover-animation" aria-label="arrow down">
             <use href="/team-js-project-portfolio/assets/sprite-0d8b1d96.svg#icon-arrow-down"></use>
           </svg>
@@ -620,8 +692,13 @@
       </li>
 
       <li class="faq-item test4">
-        <button type="button" class="faq-question">
-          <span class="faq-text">How can I contact you?</span>
+        <button
+          type="button"
+          class="faq-question"
+          aria-labelledby="faq-q-4"
+          aria-expanded="false"
+        >
+          <span id="faq-q-4" class="faq-text">How can I contact you?</span>
           <svg class="icon-Icon hover-animation" aria-label="arrow down">
             <use href="/team-js-project-portfolio/assets/sprite-0d8b1d96.svg#icon-arrow-down"></use>
           </svg>
@@ -636,8 +713,15 @@
       </li>
 
       <li class="faq-item test5">
-        <button type="button" class="faq-question test">
-          <span class="faq-text">Do you provide advice or support?</span>
+        <button
+          type="button"
+          class="faq-question test"
+          aria-labelledby="faq-q-5"
+          aria-expanded="false"
+        >
+          <span id="faq-q-5" class="faq-text">
+            Do you provide advice or support?
+          </span>
           <svg class="icon-Icon hover-animation" aria-label="arrow down">
             <use href="/team-js-project-portfolio/assets/sprite-0d8b1d96.svg#icon-arrow-down"></use>
           </svg>
@@ -654,8 +738,13 @@
       </li>
 
       <li class="faq-item test6">
-        <button type="button" class="faq-question">
-          <span class="faq-text faq-text-last">
+        <button
+          type="button"
+          class="faq-question"
+          aria-labelledby="faq-q-6"
+          aria-expanded="false"
+        >
+          <span id="faq-q-6" class="faq-text faq-text-last">
             What does the process of developing a software product look like
             from idea to implementation?
           </span>
@@ -676,9 +765,9 @@
 </section>
 
       <!-- COVERS SECTION -->
-<section class="section " id="covers">
+<section class="section" id="covers">
   <div class="covers-container">
-    <div class="covers-section">
+    <div class="covers-section lazy-bg">
       <div class="marquee">
         <h2 class="visually-hidden">Covers</h2>
         <ul class="marquee-inner">
@@ -828,14 +917,15 @@
 </section>
 
     </main>
-    <footer class="footer" id="footer">
+    <footer class="footer lazy-bg" id="footer">
   <div class="container footer-container">
     <div class="footer-top">
       <img
         class="footer-image"
         srcset="/team-js-project-portfolio/assets/footer_1x-66d269ae.jpg 1x, /team-js-project-portfolio/assets/footer_2x-d8275575.jpg 2x"
-        src="../img/footer/footer_1x.jpg"
+        src="/team-js-project-portfolio/assets/footer_1x-66d269ae.jpg"
         alt="Djefferson Photo"
+        loading="lazy"
       />
       <h2 class="footer-title">Let’s <span class="title-accent">work</span></h2>
       <h2 class="footer-title">together</h2>
