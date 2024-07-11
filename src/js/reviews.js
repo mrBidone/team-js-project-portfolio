@@ -46,13 +46,11 @@ window.addEventListener('DOMContentLoaded', async () => {
       modules: [Keyboard, Mousewheel],
       direction: 'horizontal',
       slidesPerView: 1,
-      width: 292,
-
-      spaceBetween: 5,
+      spaceBetween: 16,
       breakpoints: {
         375: {
           width: 343,
-          spaceBetween: 5,
+          spaceBetween: 16,
           slidesPerView: 1,
         },
 
@@ -97,4 +95,25 @@ window.addEventListener('DOMContentLoaded', async () => {
     const errorBlock = document.getElementById('error-reviews-block');
     errorBlock.style.display = 'block';
   }
+});
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById('myBtn').style.display = 'block';
+  } else {
+    document.getElementById('myBtn').style.display = 'none';
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('myBtn').addEventListener('click', topFunction);
 });

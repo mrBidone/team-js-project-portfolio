@@ -11,22 +11,17 @@
 }
 
 .covers-container {
-  max-width: 100vh;
+  max-width: 100%;
 }
 
 .covers-section {
   position: relative;
   overflow: hidden;
-  height: 508px;
-  min-width: 320px;
   background-image: url(/img/covers/elements_vectors.png);
   background-size: cover;
+  height: 508px;
 }
-@media (min-resolution: 192dpi) {
-  .covers-section {
-    background-image: url(/img/covers/elements_vectors@2x.png);
-  }
-}
+
 .marquee {
   position: absolute;
   top: -300px;
@@ -59,34 +54,27 @@
 }
 
 .animation-marquee {
-  animation-name: marqueeLine;
-  animation-duration: 9000ms;
+  animation-name: covers-anim;
+  animation-duration: 15s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 
-@keyframes marqueeLine {
+.marquee-inner {
+  animation-play-state: paused;
+}
+
+@keyframes covers-anim {
   0% {
-    transform: translate(20px);
-  }
-  50% {
-    transform: translate(-100px);
+    transform: translate(0);
   }
   100% {
-    transform: translate(20px);
+    transform: translate(-50%);
   }
-}
-.marquee-inner:nth-child(3) {
-  padding-left: 300px;
-}
-.marquee-inner:nth-child(5) {
-  padding-left: 200px;
 }
 
 @media only screen and (min-width: 768px) {
-  .covers-container {
-    max-width: 100vh;
-  }
   .covers-section {
     height: 960px;
   }
@@ -108,9 +96,6 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .covers-container {
-    max-width: 100vh;
-  }
   .marquee {
     top: -450px;
     gap: 64px;
