@@ -89,6 +89,8 @@
   width: 68px;
   height: 68px;
   justify-content: center;
+  transition: border-color var(--default-duration) var(--timing-function);
+  cursor: pointer;
 }
 .swiper-proj-next,
 .swiper-proj-prev {
@@ -100,13 +102,12 @@
   pointer-events: none;
 }
 
-
-
-
-
+.swiper-proj-prev:hover,
+.swiper-proj-next:hover {
+  border-color: #fafafa;
+}
 
 .swiper-btn {
-
   display: flex;
   justify-content: center;
   margin-top: 64px;
@@ -165,7 +166,7 @@
 
 @media only screen and (min-width: 1440px) {
   .project-item {
-    display: flex !important;
+    display: flex;
     max-width: 1376px;
   }
 
