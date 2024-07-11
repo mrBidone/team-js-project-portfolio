@@ -9,14 +9,14 @@
     <script type="module" crossorigin src="/team-js-project-portfolio/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/team-js-project-portfolio/assets/vendor-7ab59554.js">
     <link rel="stylesheet" href="/team-js-project-portfolio/assets/vendor-d9447e15.css">
-    <link rel="stylesheet" href="/team-js-project-portfolio/assets/index-57ab8d43.css">
+    <link rel="stylesheet" href="/team-js-project-portfolio/assets/index-a3eb9b3f.css">
   </head>
   <body>
-      <!-- Header -->
+    <!-- Header -->
 <header class="header">
   <div class="container header-container">
     <nav class="navigation">
-      <a id="home" href="/" class="logo">
+      <a id="home" href="/team-js-project-portfolio" class="logo">
         <img
           src="./img/header/logo-x1.png"
           srcset="/team-js-project-portfolio/assets/logo-725dc0db.png 1x, /team-js-project-portfolio/assets/logo-@x2-aeb6da26.png 2x"
@@ -24,24 +24,25 @@
         />
         <span>jefferson*</span>
       </a>
+      <div class="dropdown-menu">
+        <button class="dropbtn">Menu</button>
+        <ul id="dropdown" class="nav-links-container dropdown-content">
+          <li class="nav-link-item">
+            <a href="#about-me" class="nav-link">About me</a>
+          </li>
+          <li class="nav-link-item">
+            <a href="#benefits" class="nav-link">Benefits</a>
+          </li>
+          <li class="nav-link-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-link-item">
+            <a href="#faq" class="nav-link">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div></div>
     </nav>
-    <div class="dropdown-menu">
-      <button class="dropbtn">Menu</button>
-      <ul id="dropdown" class="nav-links-container dropdown-content">
-        <li class="nav-link-item">
-          <a href="#about-me" class="nav-link">About me</a>
-        </li>
-        <li class="nav-link-item">
-          <a href="#benefits" class="nav-link">Benefits</a>
-        </li>
-        <li class="nav-link-item">
-          <a href="#projects" class="nav-link">Projects</a>
-        </li>
-        <li class="nav-link-item">
-          <a href="#faq" class="nav-link">FAQ</a>
-        </li>
-      </ul>
-    </div>
     <button class="hamburger-menu-open-button" data-menu-open>
       <svg class="icon" width="28" height="28">
         <use href="/team-js-project-portfolio/assets/sprite-0d8b1d96.svg#icon-burger" />
@@ -59,7 +60,7 @@
         <use href="/team-js-project-portfolio/assets/sprite-0d8b1d96.svg#icon-close" data-menu-close />
       </svg>
     </button>
-    <nav class="mobile-menu-navigation">
+    <nav>
       <ul class="mobile-menu-nav-links-container">
         <li class="mobile-menu-nav-link-item">
           <a href="#about-me" data-menu-close>About me</a>
@@ -85,30 +86,51 @@
   </div>
 </div>
 
+    <main>
       <!-- Hero -->
-<section id="hero">
-  <div class="container hero-wrapper">
+<section class="hero">
+  <div class="container">
     <h1 class="hero-title">
       Hello.<br />I’m Fullstack developer Lloyd Jefferson.
     </h1>
     <ul class="contacts-links-container">
       <li class="contact-link-item">
-        <a href="https://instagram.com" class="contact-link" target="_blank">
+        <a
+          href="https://instagram.com"
+          class="contact-link"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
           IG
         </a>
       </li>
       <li class="contact-link-item">
-        <a href="https://facebook.com" class="contact-link" target="_blank">
+        <a
+          href="https://facebook.com"
+          class="contact-link"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
           FB
         </a>
       </li>
       <li class="contact-link-item">
-        <a href="https://youtube.com" class="contact-link" target="_blank">
+        <a
+          href="https://youtube.com"
+          class="contact-link"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
           YT
         </a>
       </li>
       <li class="contact-link-item">
-        <a href="https://github.com" class="contact-link" target="_blank">
+        <a
+          href="https://github.com"
+          class="contact-link"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
           GH
         </a>
       </li>
@@ -121,7 +143,6 @@
   </div>
 </section>
 
-    <main>
       <!-- about me -->
 
 <section id="about-me" class="about-me section">
@@ -354,7 +375,7 @@
     </div>
   </div>
 </section>
- 
+
       <!-- projects section -->
 <section class="section" id="projects">
 <div class="container">
@@ -791,7 +812,7 @@
 </section>
 
     </main>
-      <footer class="footer" id="footer">
+    <footer class="footer" id="footer">
     <div class="container footer-container">
         <div class="footer-top">
             <img class="footer-image" srcset="/team-js-project-portfolio/assets/footer_1x-66d269ae.jpg 1x, /team-js-project-portfolio/assets/footer_2x-d8275575.jpg 2x" src="../img/footer/footer_1x.jpg" alt="Djefferson Photo" />
@@ -835,7 +856,7 @@
             <p class="modal-message"></p>
         </div>
     </div>
-</div> 
+</div>
 
     
   </body>
