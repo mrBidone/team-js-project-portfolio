@@ -49,7 +49,7 @@
 }
 
 .reviews-icon:hover {
-  border: 1px solid rgba(250, 250, 250);
+  border-color: rgba(250, 250, 250);
 }
 
 .swiper-btn-container {

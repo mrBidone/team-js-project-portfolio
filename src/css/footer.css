@@ -2,7 +2,8 @@
 
 .footer {
   padding: 32px 0;
-  background: var(--main-bg-color) url('/img/footer/footer-mobil_1x.png') right center no-repeat;
+  background: var(--main-bg-color) url('/img/footer/footer-mobil_1x.png') right
+    center no-repeat;
 }
 
 .container.footer-container {
@@ -119,8 +120,7 @@
   border-radius: 60px;
   line-height: 1;
   height: 100%;
-  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--main-bg-color);
 }
 
 .contacts-mail {
@@ -147,11 +147,7 @@
 }
 
 .contacts-item:hover {
-  border-color: var(--main-text-color);
-}
-
-.contacts-item:hover .contacts-link {
-  color: #e0373f;
+  background-color: var(--accent-color);
 }
 
 /* Modal */
@@ -246,7 +242,8 @@
 @media screen and (min-width: 768px) {
   .footer {
     padding: 80px 0 169px;
-    background: var(--main-bg-color) url('/img/footer/footer-tablet_1x.png') right center no-repeat;
+    background: var(--main-bg-color) url('/img/footer/footer-tablet_1x.png')
+      right center no-repeat;
   }
 
   .container.footer-container {
@@ -332,7 +329,8 @@
 
 @media screen and (min-width: 1440px) {
   .footer {
-    background: var(--main-bg-color) url('/img/footer/footer-desktop_1x.png') right center no-repeat;
+    background: var(--main-bg-color) url('/img/footer/footer-desktop_1x.png')
+      right center no-repeat;
   }
 
   .container.footer-container {
@@ -353,18 +351,21 @@
 
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .footer {
-    background: var(--main-bg-color) url('/img/footer/footer-mobil_1x.png') right center no-repeat;
+    background: var(--main-bg-color) url('/img/footer/footer-mobil_1x.png')
+      right center no-repeat;
   }
 }
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .footer {
-    background: var(--main-bg-color) url('/img/footer/footer-tablet_2x.png') right center no-repeat;
+    background: var(--main-bg-color) url('/img/footer/footer-tablet_2x.png')
+      right center no-repeat;
   }
 }
 
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
   .footer {
-    background: var(--main-bg-color) url('/img/footer/footer-desktop_2x.png') right center no-repeat;
+    background: var(--main-bg-color) url('/img/footer/footer-desktop_2x.png')
+      right center no-repeat;
   }
 }
