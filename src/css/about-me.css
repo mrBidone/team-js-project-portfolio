@@ -24,7 +24,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-  
+
 .about-me-descr-photo {
   display: flex;
   flex-direction: column;
@@ -120,6 +120,7 @@
   color: var(--transparent-text-color);
   background-color: transparent;
   cursor: auto;
+  /* outline: transparent; */
 }
 
 .show-btn-icon {
@@ -133,6 +134,14 @@
   cursor: pointer;
 
   transition: transform 0.5s ease-in;
+}
+
+.show-btn-icon:hover {
+  border-color: #fafafa;
+}
+
+.show-btn-icon:focus {
+  outline: none;
 }
 
 .information-text-item-about-me:not(:last-child) {
