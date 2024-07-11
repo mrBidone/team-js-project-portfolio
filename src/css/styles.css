@@ -17,3 +17,7 @@
 @import url('./reviews.css');
 @import url('./footer.css');
 @import url('./projects.css');
+
+.lazy-bg {
+  background: none;
+}
