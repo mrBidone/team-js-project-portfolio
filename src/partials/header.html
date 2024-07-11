@@ -2,7 +2,7 @@
 <header class="header">
   <div class="container header-container">
     <nav class="navigation">
-      <a id="home" href="/" class="logo">
+      <a id="home" href="/team-js-project-portfolio" class="logo">
         <img
           src="./img/header/logo-x1.png"
           srcset="./img/header/logo.png 1x, ./img/header/logo-@x2.png 2x"
@@ -10,24 +10,25 @@
         />
         <span>jefferson*</span>
       </a>
+      <div class="dropdown-menu">
+        <button class="dropbtn">Menu</button>
+        <ul id="dropdown" class="nav-links-container dropdown-content">
+          <li class="nav-link-item">
+            <a href="#about-me" class="nav-link">About me</a>
+          </li>
+          <li class="nav-link-item">
+            <a href="#benefits" class="nav-link">Benefits</a>
+          </li>
+          <li class="nav-link-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-link-item">
+            <a href="#faq" class="nav-link">FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div></div>
     </nav>
-    <div class="dropdown-menu">
-      <button class="dropbtn">Menu</button>
-      <ul id="dropdown" class="nav-links-container dropdown-content">
-        <li class="nav-link-item">
-          <a href="#about-me" class="nav-link">About me</a>
-        </li>
-        <li class="nav-link-item">
-          <a href="#benefits" class="nav-link">Benefits</a>
-        </li>
-        <li class="nav-link-item">
-          <a href="#projects" class="nav-link">Projects</a>
-        </li>
-        <li class="nav-link-item">
-          <a href="#faq" class="nav-link">FAQ</a>
-        </li>
-      </ul>
-    </div>
     <button class="hamburger-menu-open-button" data-menu-open>
       <svg class="icon" width="28" height="28">
         <use href="./img/svg/sprite.svg#icon-burger" />
@@ -45,7 +46,7 @@
         <use href="./img/svg/sprite.svg#icon-close" data-menu-close />
       </svg>
     </button>
-    <nav class="mobile-menu-navigation">
+    <nav>
       <ul class="mobile-menu-nav-links-container">
         <li class="mobile-menu-nav-link-item">
           <a href="#about-me" data-menu-close>About me</a>
