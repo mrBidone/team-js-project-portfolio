@@ -1,4 +1,4 @@
-/* import iziToast from 'izitoast';
+/*  import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import imageUrlError from '../img/footer/icon-error.svg';
 

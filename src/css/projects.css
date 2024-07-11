@@ -1,3 +1,4 @@
+/* Section Title */
 .section-title {
   line-height: 1.5;
   letter-spacing: -0.02em;
@@ -6,11 +7,19 @@
   margin-bottom: 32px;
 }
 
+/* Project Item */
 .project-item {
+  display: flex;
+  flex-direction: column;
   max-width: 343px;
 }
+
+.first-side,
+.second-side {
+  flex: 1;
+}
+
 .first-side {
-  max-width: 100%;
   background-color: var(--main-text-color);
   color: var(--dark-text-color);
   padding: 32px;
@@ -59,15 +68,27 @@
 }
 
 .second-side {
-  max-width: 100%;
   background-color: var(--cards-bg-color);
   padding: 0 16px;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
 }
+
 .project-img {
   width: 311px;
-  padding: 100px 0;
+  padding: 64px 0;
+}
+
+.swiper {
+  display: flex;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.project-swiper {
+  width: 100%;
 }
 
 .icon-project {
@@ -100,13 +121,7 @@
   pointer-events: none;
 }
 
-
-
-
-
-
 .swiper-btn {
-
   display: flex;
   justify-content: center;
   margin-top: 64px;
@@ -115,6 +130,7 @@
 
 @media only screen and (min-width: 768px) {
   .project-item {
+    flex-direction: row;
     max-width: 704px;
   }
 
@@ -164,17 +180,15 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .project-item{
+  .project-item {
     display: flex;
+    flex-direction: row;
     max-width: 1376px;
   }
-
   .first-side {
     padding-right: 130px;
     border-bottom-left-radius: 24px;
     border-top-right-radius: 0px;
-
-  }
   }
   .tech-skills-list {
     margin-bottom: 223px;
@@ -184,12 +198,12 @@
     min-width: 177px;
     height: 55px;
   }
-
   .second-side {
     background-color: var(--cards-bg-color);
     padding: 0 37px;
     border-top-right-radius: 24px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 24px;
-
+  }
 }
+

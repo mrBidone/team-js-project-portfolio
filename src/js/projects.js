@@ -1,42 +1,33 @@
- import Swiper from 'swiper/bundle';
+import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 import { Keyboard, Mousewheel, Navigation } from 'swiper/modules';
-import '../css/styles.css';
 
 const swiperProject = new Swiper('#swiperProject', {
-  modules: [Keyboard, Mousewheel],
+  modules: [Keyboard, Mousewheel, Navigation],
   navigation: {
     nextEl: '.swiper-proj-next',
     prevEl: '.swiper-proj-prev'
   },
-  mousewheel: {
-    invert: true,
-  },
+  mousewheel: true,
   keyboard: {
     enabled: true,
     onlyInViewport: true,
   },
-  mousewheel: true,
-  touch: true,
   centeredSlides: false,
   loop: false,
   speed: 500,
-
-  spaceBetween: 5,
-  slideToClickedSlide: false,
+  spaceBetween: 20,
   allowTouchMove: true,
-
   autoplay: false,
   breakpoints: {
-
     768: {
       slidesPerView: 1,
-      spaceBetween: 5,
+      spaceBetween: 20,
       width: 704,
     },
     1440: {
       slidesPerView: 1,
-      spaceBetween: 5,
+      spaceBetween: 20,
       width: 1376,
     },
   },
@@ -64,9 +55,7 @@ function updateNavigation() {
   }
 }
 
-
 updateNavigation();
-
 
 
 
