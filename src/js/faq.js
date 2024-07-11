@@ -7,6 +7,12 @@ new Accordion('.faq-list', {
   panelClass: 'faq-answer',
   showMultiple: true,
   duration: 800,
+  beforeOpen: el =>
+    el.querySelector('button.faq-question').setAttribute('aria-expanded', true),
+  beforeClose: el =>
+    el
+      .querySelector('button.faq-question')
+      .setAttribute('aria-expanded', false),
 });
 
 // document.addEventListener('DOMContentLoaded', function() {
