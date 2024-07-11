@@ -164,9 +164,6 @@
   align-self: self-end;
 }
 
-.mobile-menu-navigation {
-}
-
 .mobile-menu-nav-links-container {
   display: flex;
   flex-direction: column;
