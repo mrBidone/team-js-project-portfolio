@@ -3,7 +3,7 @@ import 'swiper/swiper-bundle.css';
 import { Keyboard, Mousewheel, Navigation } from 'swiper/modules';
 
 const swiperProject = new Swiper('#swiperProject', {
-  modules: [Keyboard, Mousewheel, Navigation],
+  modules: [Keyboard, Mousewheel, ],
   navigation: {
     nextEl: '.swiper-proj-next',
     prevEl: '.swiper-proj-prev'
