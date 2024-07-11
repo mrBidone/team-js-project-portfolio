@@ -164,7 +164,7 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .project-item {
+  .project-item{
     display: flex;
     max-width: 1376px;
   }
@@ -173,6 +173,8 @@
     padding-right: 130px;
     border-bottom-left-radius: 24px;
     border-top-right-radius: 0px;
+
+  }
   }
   .tech-skills-list {
     margin-bottom: 223px;
@@ -189,5 +191,5 @@
     border-top-right-radius: 24px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 24px;
-  }
+
 }

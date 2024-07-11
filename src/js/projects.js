@@ -21,6 +21,7 @@ const swiperProject = new Swiper('#swiperProject', {
   centeredSlides: false,
   loop: false,
   speed: 500,
+
   spaceBetween: 5,
   slideToClickedSlide: false,
   allowTouchMove: true,
