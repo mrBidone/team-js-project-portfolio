@@ -120,12 +120,10 @@ function openModalWindow() {
   refs.backdropEl.classList.add('is-open');
   addEventListeners();
 }
-
 function closeModalWindow() {
   refs.backdropEl.classList.remove('is-open');
   removeEventListeners();
 }
-
 function addEventListeners() {
   document.addEventListener('keydown', handleKeyDown);
   document.addEventListener('click', handleBackdropClick);
