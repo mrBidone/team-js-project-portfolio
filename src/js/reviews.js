@@ -29,6 +29,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         reviewItem.classList.add('swiper-slide');
         reviewItem.classList.add('reviews-item');
         reviewItem.setAttribute('aria-label', `${index + 1} / ${arr.length}`);
+        reviewItem.setAttribute('role', 'listitem');
         reviewItem.innerHTML = `
             <img
               src="${review.avatar_url}"
