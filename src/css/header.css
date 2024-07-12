@@ -92,6 +92,7 @@
 .header-order-button {
   display: none;
   color: var(--main-text-color);
+  flex-shrink: 0;
   width: 163px;
   height: 55px;
   justify-content: center;
