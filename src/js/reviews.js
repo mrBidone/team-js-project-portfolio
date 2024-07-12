@@ -24,10 +24,12 @@ window.addEventListener('DOMContentLoaded', async () => {
       notFoundText.innerText = 'Not found';
       refs.reviewsList.appendChild(notFoundText);
     } else {
-      data.forEach(review => {
+      data.forEach((review, index, arr) => {
         const reviewItem = document.createElement('li');
         reviewItem.classList.add('swiper-slide');
         reviewItem.classList.add('reviews-item');
+        reviewItem.setAttribute('role', 'group');
+        reviewItem.setAttribute('aria-label', `${index + 1} / ${arr.length}`);
         reviewItem.innerHTML = `
             <img
               src="${review.avatar_url}"
