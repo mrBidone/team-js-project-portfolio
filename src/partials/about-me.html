@@ -20,7 +20,6 @@
               ./img/about-me/portrait_desktop@2x.webp 2x
             "
             media="(min-width: 1440px)"
-            loading="lazy"
           />
           <source
             srcset="
@@ -28,7 +27,6 @@
               ./img/about-me/portrait_tablet@2x.webp 2x
             "
             media="(min-width: 768px)"
-            loading="lazy"
           />
           <source
             srcset="
@@ -36,7 +34,6 @@
               ./img/about-me/portrait_mobile@2x.webp 2x
             "
             media="(max-width: 767px)"
-            loading="lazy"
           />
           <img
             class="portrait-img"
@@ -62,8 +59,8 @@
             </svg>
           </button>
         </h3>
-        <ul class="ac-panel">
-          <li class="information-text-item-about-me">
+        <div class="ac-panel">
+          <p class="information-text-item-about-me">
             I am Lloyd Jefferson, a talented programmer with extensive expertise
             in software development. I have an understanding of different
             programming languages and technologies, always ready to improve my
@@ -71,8 +68,8 @@
             unconventional, creative solutions to problems. I have a high level
             of analytical skills and am able to effectively solve even the most
             difficult tasks encountered on the way.
-          </li>
-          <li class="information-text-item">
+          </p>
+          <p class="information-text-item">
             Able to work both independently and in a team. I can effectively
             cooperate with colleagues, exchanging ideas and finding optimal
             solutions. Professional maturity allows you to calmly cope with
@@ -83,8 +80,8 @@
             understanding of various programming languages, frameworks and
             architectural concepts that allow me to create efficient and
             scalable software.
-          </li>
-        </ul>
+          </p>
+        </div>
       </li>
       <li class="ac-item-information">
         <h3 class="ac-header-information">
@@ -136,29 +133,69 @@
     </ul>
     <div class="flex-wrapper">
       <div class="swiper" id="swiperAbout">
-        <ul class="swiper-wrapper-skills swiper-wrapper">
-          <li class="swiper-slide">
+        <ul class="swiper-wrapper-skills swiper-wrapper" aria-live="polite">
+          <li
+            class="swiper-slide"
+            role="group"
+            aria-label="1 / 8"
+            data-swiper-slide-index="0"
+          >
             <p class="swiper-slide-text">HTML/CSS</p>
           </li>
-          <li class="swiper-slide">
+          <li
+            class="swiper-slide"
+            role="group"
+            aria-label="2 / 8"
+            data-swiper-slide-index="1"
+          >
             <p class="swiper-slide-text">JavaScript</p>
           </li>
-          <li class="swiper-slide">
+          <li
+            class="swiper-slide"
+            role="group"
+            aria-label="3 / 8"
+            data-swiper-slide-index="2"
+          >
             <p class="swiper-slide-text">React</p>
           </li>
-          <li class="swiper-slide">
+          <li
+            class="swiper-slide"
+            role="group"
+            aria-label="4 / 8"
+            data-swiper-slide-index="3"
+          >
             <p class="swiper-slide-text">Node.js</p>
           </li>
-          <li class="swiper-slide">
+          <li
+            class="swiper-slide"
+            role="group"
+            aria-label="5 / 8"
+            data-swiper-slide-index="4"
+          >
             <p class="swiper-slide-text">React Native</p>
           </li>
-          <li class="swiper-slide">
+          <li
+            class="swiper-slide"
+            role="group"
+            aria-label="6 / 8"
+            data-swiper-slide-index="5"
+          >
             <p class="swiper-slide-text">Soft skills</p>
           </li>
-          <li class="swiper-slide">
+          <li
+            class="swiper-slide"
+            role="group"
+            aria-label="7 / 8"
+            data-swiper-slide-index="6"
+          >
             <p class="swiper-slide-text">Angular</p>
           </li>
-          <li class="swiper-slide">
+          <li
+            class="swiper-slide"
+            role="group"
+            aria-label="8 / 8"
+            data-swiper-slide-index="7"
+          >
             <p class="swiper-slide-text">Vue.js</p>
           </li>
         </ul>
