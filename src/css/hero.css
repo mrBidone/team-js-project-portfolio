@@ -1,37 +1,37 @@
 .hero {
   padding: 281px 0 32px;
-  background-image: url('../img/hero/hero-mobile.png');
+  background-image: url('../img/hero/hero-mobile.webp');
   background-size: 100% auto;
   background-repeat: repeat-y;
 }
 
 @media only screen and (min-resolution: 192dpi) {
   .hero {
-    background-image: url('../img/hero/hero-mobile-@x2.png');
+    background-image: url('../img/hero/hero-mobile-@x2.webp');
   }
 }
 
 @media only screen and (min-width: 768px) {
   .hero {
-    background-image: url('../img/hero/hero-tablet.png');
+    background-image: url('../img/hero/hero-tablet.webp');
     padding-top: 300px;
   }
 
   @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
     .hero {
-      background-image: url('../img/hero/hero-tablet-@x2.png');
+      background-image: url('../img/hero/hero-tablet-@x2.webp');
     }
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .hero {
-    background-image: url('../img/hero/hero.png');
+    background-image: url('../img/hero/hero.webp');
   }
 
   @media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
     .hero {
-      background-image: url('../img/hero/hero-@x2.png');
+      background-image: url('../img/hero/hero-@x2.webp');
     }
   }
 }

@@ -120,7 +120,7 @@
   width: 100%;
   height: 100%;
   padding: 32px 0 64px;
-  background-image: url('../img/header/menu.png');
+  background-image: url('../img/header/menu.webp');
   background-repeat: repeat-y;
   background-size: 100% auto;
   transform: translateY(0);
@@ -135,7 +135,7 @@
 
 @media only screen and (min-resolution: 192dpi) {
   .mobile-menu {
-    background-image: url('../img/header/menu-@x2.png');
+    background-image: url('../img/header/menu-@x2.webp');
   }
 }
 
